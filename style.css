@@ -1,0 +1,22 @@
+.start-screen{
+  background: url(https://raw.githubusercontent.com/IdzanamiMAO/Cozy_House/main/img/start-screen-gradient-background.png) no-repeat center;
+  background-size: cover;
+  background-color: #545454;
+  padding: 180px 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.start-screen__content{
+  max-width:550px;
+  padding-top: 163px;
+}
+.start-screen__caption{
+  font-family: Georgia;
+  font-size: 44px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 42px;
+}
+.start-screen__img{
+  max-width: 600px;
+}
