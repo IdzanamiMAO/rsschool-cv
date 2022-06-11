@@ -1,22 +1,114 @@
-.start-screen{
-  background: url(https://raw.githubusercontent.com/IdzanamiMAO/Cozy_House/main/img/start-screen-gradient-background.png) no-repeat center;
-  background-size: cover;
-  background-color: #545454;
-  padding: 180px 40px 0;
+html{
+  box-sizing: border-box;
+  /*max-width: 1920px;*/
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0px;
+  max-width: 1440px;
+  margin: 0px auto;
+  border: 3px solid #909e14;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+ /*хедр*/
+.header{
   display: flex;
   justify-content: space-between;
+  /*align-items: center;*/
+  padding: 0px;
+  margin: 0px;
+  /*max-width: 100%;*/
 }
-.start-screen__content{
-  max-width:550px;
-  padding-top: 163px;
+.logo-photo{
+  max-width: 450px;
 }
-.start-screen__caption{
-  font-family: Georgia;
-  font-size: 44px;
-  line-height: 130%;
-  color: #FFFFFF;
-  margin-bottom: 42px;
+.container{
+  flex-direction: column;
 }
-.start-screen__img{
-  max-width: 600px;
+.nav__list--header{
+  display: flex;
+  justify-content: space-between;
+  align-self: baseline;
+  padding: 0px 50px;
+  margin: 0px;
+  /*max-width: 720px;*/
+}
+.nav__item--header{
+  margin-left: 40px;
+  line-height: 40px;
+}
+.nav__item--header:first-child{
+  margin-left: 0px;
+}
+.nav__item--header:hover{
+  background-color: #a216b4a4;
+  cursor: pointer;
+}
+.nav__link{
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+.header-caption{ /* обертка для текста с имененм м профессие*/
+  line-height: 51px;
+  padding-left: 20px;
+  margin-top: 150px;
+  background: linear-gradient(to right, blue, pink, blue);
+}
+.caption{
+  font-family: Forum;
+  /*font-style: normal;
+  font-weight: normal;*/
+  font-size: 28px;
+  line-height: 51px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px;
+  padding-top: 20px;
+  /*display: block;*/
+  /*padding-left: 70px;*/
+}
+.caption__desc{
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+.about-me{
+  margin-top: 120px;
+}
+.section-caption{
+  font-family: Forum;
+  font-size: 25px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  padding-left: 10px;
+  margin: 0px;
+  border-left: 10px solid #a216b4a4;
+}
+.section-caption:hover{
+  background-color: #a216b4; /*сделать анимацию слева на право красивого щаполнения фона*/
+  cursor: pointer;
+}
+.section__desc{
+  font-family: Forum;
+  font-size: 25px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  padding: 15px 20px;
+  margin: 0px;
 }
