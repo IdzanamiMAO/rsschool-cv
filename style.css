@@ -30,7 +30,7 @@ a{
 }
 .logo-photo{
   max-width: 500px;
-  margin: 0px 20px 20px 0px;
+  margin: 0px 20px 0px 0px;
 }
 .container{
   flex-direction: column;
@@ -50,7 +50,7 @@ a{
 .nav__item--header:first-child{
   margin-left: 0px;
 }
-.nav__item--header:hover, .side-contact__link:hover{
+.nav__item--header:hover, .side-contact__link:hover, .education__link:hover{
   background-color: #a216b4a4;
   transition: .3s;
   cursor: pointer;
@@ -129,7 +129,10 @@ a{
 /*боковая панель под фото*/
 .left-side{
   min-width: 470px;
-  margin: 0px 20px 20px 30px;
+  margin: 0px 20px 0px 0px;
+  padding-left: 30px;
+  padding-top: 20px;
+  background-color: #a216b434;
 }
 .contact, .education{
   width: 470px;
