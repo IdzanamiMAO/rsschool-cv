@@ -30,10 +30,11 @@ a{
 }
 .logo-photo{
   max-width: 500px;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 30px 0px 0px;
 }
 .container{
   flex-direction: column;
+  flex-grow: 1;
 }
 .nav__list--header{
   display: flex;
@@ -129,7 +130,7 @@ a{
 /*боковая панель под фото*/
 .left-side{
   min-width: 470px;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 30px 0px 0px;
   padding-left: 30px;
   padding-top: 20px;
   background-color: #a216b434;
@@ -179,4 +180,12 @@ padding: 5px 0px;
 }
 .education__item{
   padding-bottom: 50px;
+}
+
+.right-side{
+  flex-grow: 1;
+  padding-top: 20px;
+}
+.skills__item{
+padding-bottom: 10px;
 }
