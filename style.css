@@ -129,10 +129,12 @@ a{
 /*боковая панель под фото*/
 .left-side{
   min-width: 470px;
-  margin: 0px 20px 20px 0px;
-  margin-left: 30px;
+  margin: 0px 20px 20px 30px;
 }
-.side-contact{
+.contact, .education{
+  width: 470px;
+}
+.side-contact, .education__list{
   box-sizing: border-box;
   padding: 15px 30px;
   margin: 0px;
@@ -145,8 +147,11 @@ a{
 .side-contact__item{
 padding: 5px 0px;
 }
-.side-contact__link{
+.side-contact__link, .education__link{
+  text-decoration: underline;
+  text-decoration-color: #a216b4a4;
   color: #000000;
+  font-style: italic;
 }
 .address{
   padding-top: 40px;
@@ -154,4 +159,21 @@ padding: 5px 0px;
 .address-desc{
   padding: 5px 0px;
   margin: 0px;
+}
+.education{
+  margin-top: 100px;
+}
+.education__institution{
+  margin: 10px 0px;
+}
+.education__speciality, .education__degree{
+  font-size: 22px;
+  line-height: 35px;
+  margin: 10px 0px;
+}
+.education__degree{
+  font-style: italic;
+}
+.education__item{
+  padding-bottom: 50px;
 }
