@@ -7,10 +7,10 @@ body{
   margin: 0px;
   max-width: 1440px;
   margin: 0px auto;
-  border: 3px solid #909e14;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /*border: 3px solid #909e14;*/
 }
 li{
   list-style: none;
@@ -18,7 +18,7 @@ li{
 a{
   text-decoration: none;
 }
-pre{
+pre, p{
   margin: 0px;
   }
 
@@ -26,11 +26,9 @@ pre{
 .header{
   display: flex;
   justify-content: space-between;
-  /*align-items: center;*/
   padding: 0px;
   margin: 0px;
-  /*max-width: 100%;*/
-  border: 3px solid red;
+  /*border: 3px solid red;*/
 }
 .logo-photo{
   max-width: 500px;
@@ -39,16 +37,15 @@ pre{
 .container{
   flex-direction: column;
   flex-grow: 1;
-  border: 3px solid green;
+  /*border: 3px solid green;*/
 }
-.nav__list--header{
+.nav__list--header, .footer__list{
   display: flex;
   justify-content: space-between;
   align-self: baseline;
   padding: 0px 30px;
   margin: 0px;
-  /*max-width: 720px;*/
-  border: 3px solid purple;
+  /*border: 3px solid purple;*/
 }
 .nav__item--header{
   margin-left: 40px;
@@ -58,9 +55,12 @@ pre{
   margin-left: 0px;
 }
 .nav__item--header:hover, .side-contact__link:hover, .education__link:hover, .projects__card--subtitle:hover{
-  background-color: #cf02a371;
   transition: .3s;
   cursor: pointer;
+  filter: drop-shadow(0 0 5px #cf02a3);
+}
+.nav__item--header:hover{
+  background-color: #cf02a371;
 }
 /*.nav__item--header:visited, .side-contact__link:visited, .education__link:visited, .projects__card--subtitle:visied{ /*посещенные ссылки
   color: #cf02a3;
@@ -69,11 +69,10 @@ pre{
   font-family: Roboto;
   font-weight: 300;
   font-size: 22px;
-  /*line-height: 40px;*/
   letter-spacing: 2px;
   color: #000000;
 }
-.header-caption{ /* обертка для текста с имененм м профессие*/
+.header-caption{ 
   line-height: 51px;
   padding-left: 30px;
   margin-top: 200px;
@@ -81,8 +80,6 @@ pre{
 }
 .caption{
   font-family: Forum;
-  /*font-style: normal;
-  font-weight: normal;*/
   font-size: 28px;
   line-height: 51px;
   letter-spacing: 5px;
@@ -90,8 +87,6 @@ pre{
   color: #ffffff;
   margin: 0px;
   padding-top: 20px;
-  /*display: block;*/
-  /*padding-left: 70px;*/
 }
 .caption__desc{
   font-family: Roboto;
@@ -105,7 +100,7 @@ pre{
 }
 .about-me{
   margin-top: 125px;
-  border: 3px solid orange;
+  /*border: 3px solid orange;*/
 }
 .about-caption{
   font-family: Forum;
@@ -117,7 +112,7 @@ pre{
   border-left: 10px solid #cf02a3;
 }
 .about-caption:hover{
-  background-color: #cf02a3; /*сделать анимацию слева на право красивого щаполнения фона*/
+  background-color: #cf02a3;
   transition: .3s;
   cursor: pointer;
 }
@@ -148,7 +143,7 @@ pre{
 .contact, .education{
   width: 470px;
 }
-.side-contact, .education__list{
+.side-contact, .education__list, .footer__item{
   box-sizing: border-box;
   padding: 15px 30px;
   margin: 0px;
@@ -159,7 +154,7 @@ pre{
   letter-spacing: 2px;
 }
 .side-contact__item{
-padding: 5px 0px;
+  padding: 5px 0px;
 }
 .side-contact__link, .education__link, .projects__card--subtitle{
   text-decoration: underline;
@@ -197,18 +192,22 @@ padding: 5px 0px;
   flex-grow: 1;
   padding-top: 20px;
 }
+/*.skills{
+  border: 3px solid blue;
+}*/
 .skills__item{
-padding-bottom: 10px;
+  padding-bottom: 10px;
+}
+.rus{
+  font-style: italic;
 }
 .examples{
   margin-top: 85px;
-  border: 3px solid brown;
+  /*border: 3px solid brown;*/
 }
-.skills{
-  border: 3px solid blue;
-}
+
 .projects{
-  border: 3px solid greenyellow;
+  /*border: 3px solid greenyellow;*/
   margin-top: 90px;
 }
 .card__wrapper{
@@ -216,13 +215,29 @@ padding-bottom: 10px;
   flex-wrap: wrap;
   padding: 15px 30px;
 }
-.projects__card {
+.projects__card{
   opacity: 0.6;
   margin: 0px 20px 20px 0px;
 }
-.projects__card:hover {
+.projects__card:hover{
   opacity: 1;
 }
 .img__projects{
   width: 400px;
+}
+/*закончили с правой колонкой и мейном вообщк*/
+/*футкр*/
+.footer__list{
+  align-items: center;
+}
+.img__footer{
+  width: 50px;
+}
+.footer__item:hover{
+  transition: .3s;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px #cf02a3);
+}
+.footer__copyright{
+  text-align: center;
 }
