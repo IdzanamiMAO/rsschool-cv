@@ -18,6 +18,9 @@ li{
 a{
   text-decoration: none;
 }
+pre{
+  margin: 0px;
+  }
 
  /*хедр*/
 .header{
@@ -111,7 +114,7 @@ a{
   transition: .3s;
   cursor: pointer;
 }
-.about__desc{
+.about__desc, .examples__code{
   font-family: Forum;
   font-size: 25px;
   text-align: justify;
@@ -127,7 +130,7 @@ a{
   margin: 0px;
 }
 
-/*боковая панель под фото*/
+/*левая панель под фото*/
 .left-side{
   min-width: 470px;
   margin: 0px 30px 0px 0px;
@@ -180,12 +183,16 @@ padding: 5px 0px;
 }
 .education__item{
   padding-bottom: 50px;
-}
+} /*закончили с левой панелью*/
 
+/*правая панель*/
 .right-side{
   flex-grow: 1;
   padding-top: 20px;
 }
 .skills__item{
 padding-bottom: 10px;
+}
+.examples{
+  margin-top: 85px;
 }
