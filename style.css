@@ -10,7 +10,6 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*border: 3px solid #909e14;*/
 }
 li{
   list-style: none;
@@ -28,7 +27,6 @@ pre, p{
   justify-content: space-between;
   padding: 0px;
   margin: 0px;
-  /*border: 3px solid red;*/
 }
 .logo-photo{
   max-width: 500px;
@@ -37,7 +35,6 @@ pre, p{
 .container{
   flex-direction: column;
   flex-grow: 1;
-  /*border: 3px solid green;*/
 }
 .nav__list--header, .footer__list{
   display: flex;
@@ -45,7 +42,6 @@ pre, p{
   align-self: baseline;
   padding: 0px 30px;
   margin: 0px;
-  /*border: 3px solid purple;*/
 }
 .nav__item--header{
   margin-left: 40px;
@@ -62,9 +58,9 @@ pre, p{
 .nav__item--header:hover{
   background-color: #cf02a371;
 }
-/*.nav__item--header:visited, .side-contact__link:visited, .education__link:visited, .projects__card--subtitle:visied{ /*посещенные ссылки
+.nav__link:visited, .side-contact__link:visited, .education__link:visited, .projects__card--subtitle:visited{
   color: #cf02a3;
-}*/
+}
 .nav__link{
   font-family: Roboto;
   font-weight: 300;
@@ -100,7 +96,6 @@ pre, p{
 }
 .about-me{
   margin-top: 125px;
-  /*border: 3px solid orange;*/
 }
 .about-caption{
   font-family: Forum;
@@ -192,9 +187,6 @@ pre, p{
   flex-grow: 1;
   padding-top: 20px;
 }
-/*.skills{
-  border: 3px solid blue;
-}*/
 .skills__item{
   padding-bottom: 10px;
 }
@@ -203,10 +195,8 @@ pre, p{
 }
 .examples{
   margin-top: 85px;
-  /*border: 3px solid brown;*/
 }
 .projects{
-  /*border: 3px solid greenyellow;*/
   margin-top: 90px;
 }
 .card__wrapper{
@@ -223,14 +213,19 @@ pre, p{
 }
 .img__projects{
   width: 400px;
+  
+}
+.projects__card--subtitle{
+  text-align: center;
 }/*закончили с правой колонкой и мейном вообщк*/
 
 /*футер*/
 .footer__list{
   align-items: center;
+  justify-content: center;
 }
 .img__footer{
-  width: 50px;
+  width: 35px;
 }
 .footer__item:hover{
   transition: .3s;
@@ -239,4 +234,6 @@ pre, p{
 }
 .footer__copyright{
   text-align: center;
+  font-size: 15px;
+  line-height: 17px;
 }
