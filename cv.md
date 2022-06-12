@@ -10,14 +10,14 @@
 ## Education:
 _University:_ Rostov State University of Civil Engineering, Rostov-on-Don\
 _Area of study:_ Land management and cadastres\
-_Qualification:_ Bachelor, Master's degree\
+_Qualification:_ Bachelor, Master's degree
 
-**courses on**
+**Courses on:**
 * [stepik](https://stepik.org/learn)
 * [Хекслет](https://ru.hexlet.io/my)
 * [Sololearn](https://www.sololearn.com/profile/21661792)
 ***********
-## Skills
+## Skills:
 - HTML/HTML5
 - CSS3
 - BEM
