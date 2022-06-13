@@ -163,7 +163,7 @@ p {
 .left-sidebar {
   margin-right: 30px;
   padding-left: 30px;
-  padding-top: 20px;
+  margin-top: 20px;
   min-width: 470px;
   background-color: #cf02a33f;
 }
@@ -215,14 +215,16 @@ p {
 }
 
 .education__speciality,
-.education__degree {
+.education__degree,
+.education__link {
   margin: 5px 0px;
   font-size: 22px;
   line-height: 30px;
   font-weight: normal;
 }
 
-.education__degree {
+.education__degree,
+.education__link {
   font-style: italic;
 } /*закончили с левой панелью*/
 
@@ -321,8 +323,7 @@ p {
     position: absolute;
     top: 0px;
     justify-content: center;
-    padding: 0px 10px;
-    
+    padding: 0px 5px;
   }
   .nav__item,
   .footer__item,
@@ -338,17 +339,20 @@ p {
   .nav__link {
     margin-left: 0px;
     font-family: Roboto;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 15px;
     color: #000000;
   }
 
   .logo-photo {
     margin-right: 0px;
+    max-width: 100%;
   }
 
   .left-sidebar {
     min-width: auto;
+    margin-right: 0px;
+    padding-left: 0px;
   }
 
   .headline,
@@ -359,13 +363,19 @@ p {
   .projects {
     margin-top: 30px;
   }
-  .example {
+
+  .section-caption {
+    background-color: #cf02a3;
+  }
+
+  .snippet {
     overflow: scroll;
   }
 
   .card-wrapper {
     display: flex;
     flex-direction: column;
+    padding: 15px 0px;
   }
 
   .projects__link {
