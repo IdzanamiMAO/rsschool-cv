@@ -1,0 +1,239 @@
+html{
+  box-sizing: border-box;
+  /*max-width: 1920px;*/
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0px;
+  max-width: 1440px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+pre, p{
+  margin: 0px;
+}
+
+/*хедр*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+}
+.logo-photo{
+  max-width: 500px;
+  margin: 0px 30px 0px 0px;
+}
+.container{
+  flex-direction: column;
+  flex-grow: 1;
+}
+.nav__list--header, .footer__list{
+  display: flex;
+  justify-content: space-between;
+  align-self: baseline;
+  padding: 0px 30px;
+  margin: 0px;
+}
+.nav__item--header{
+  margin-left: 40px;
+  line-height: 40px;
+}
+.nav__item--header:first-child{
+  margin-left: 0px;
+}
+.nav__item--header:hover, .side-contact__link:hover, .education__link:hover, .projects__card--subtitle:hover{
+  transition: .3s;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px #cf02a3);
+}
+.nav__item--header:hover{
+  background-color: #cf02a371;
+}
+.nav__link:visited, .side-contact__link:visited, .education__link:visited, .projects__card--subtitle:visited{
+  color: #cf02a3;
+}
+.nav__link{
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+.header-caption{ 
+  line-height: 51px;
+  padding-left: 30px;
+  margin-top: 200px;
+  background: linear-gradient(to right, #cf02a3, #2c2166);
+}
+.caption{
+  font-family: Forum;
+  font-size: 28px;
+  line-height: 51px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px;
+  padding-top: 20px;
+}
+.caption__desc{
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+.about-me{
+  margin-top: 125px;
+}
+.about-caption{
+  font-family: Forum;
+  font-size: 25px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  margin: 0px;
+  border-left: 10px solid #cf02a3;
+}
+.about-caption:hover{
+  background-color: #cf02a3;
+  transition: .3s;
+  cursor: pointer;
+}
+.about__desc, .examples__code{
+  font-family: Forum;
+  font-size: 25px;
+  text-align: justify;
+  line-height: 35px;
+  letter-spacing: 2px;
+  padding: 15px 30px;
+  margin: 0px;
+} /* закончили с хедером*/
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+/*левая панель под фото*/
+.left-side{
+  min-width: 470px;
+  margin: 0px 30px 0px 0px;
+  padding-left: 30px;
+  padding-top: 20px;
+  background-color: #cf02a33f;
+}
+.contact, .education{
+  width: 470px;
+}
+.side-contact, .education__list, .footer__item{
+  box-sizing: border-box;
+  padding: 15px 30px;
+  margin: 0px;
+  font-family: Forum;
+  font-size: 25px;
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 2px;
+}
+.side-contact__item{
+  padding: 5px 0px;
+}
+.side-contact__link, .education__link, .projects__card--subtitle{
+  text-decoration: underline;
+  text-decoration-color: #cf02a371;
+  color: #000000;
+  font-style: italic;
+}
+.address{
+  padding-top: 40px;
+}
+.address-desc{
+  padding: 5px 0px;
+  margin: 0px;
+}
+.education{
+  margin-top: 100px;
+}
+.education__institution{
+  margin: 10px 0px;
+}
+.education__speciality, .education__degree{
+  font-size: 22px;
+  line-height: 35px;
+  margin: 10px 0px;
+}
+.education__degree{
+  font-style: italic;
+}
+.education__item{
+  padding-bottom: 50px;
+} /*закончили с левой панелью*/
+
+/*правая панель*/
+.right-side{
+  flex-grow: 1;
+  padding-top: 20px;
+}
+.skills__item{
+  padding-bottom: 10px;
+}
+.rus{
+  font-style: italic;
+}
+.examples{
+  margin-top: 85px;
+}
+.projects{
+  margin-top: 90px;
+}
+.card__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 30px;
+}
+.projects__card{
+  opacity: 0.6;
+  margin: 0px 20px 20px 0px;
+}
+.projects__card:hover{
+  opacity: 1;
+}
+.img__projects{
+  width: 400px;
+  
+}
+.projects__card--subtitle{
+  text-align: center;
+}/*закончили с правой колонкой и мейном вообщк*/
+
+/*футер*/
+.footer__list{
+  align-items: center;
+  justify-content: center;
+}
+.img__footer{
+  width: 35px;
+}
+.footer__item:hover{
+  transition: .3s;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px #cf02a3);
+}
+.footer__copyright{
+  text-align: center;
+  font-size: 15px;
+  line-height: 17px;
+}

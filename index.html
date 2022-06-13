@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <img  class="logo-photo" src="./assets/img/logo-photo.JPG" alt="logo-photo">
+      <div class="container">
+        <nav>
+          <ul class="nav__list--header">
+            <li class="nav__item--header">
+              <a class="nav__link" href="#skills">Skills</a>
+            </li>
+            <li class="nav__item--header">
+              <a class="nav__link" href="#education">Education</a>
+            </li>
+            <li class="nav__item--header">
+              <a class="nav__link" href="#examples">Code examples</a>
+            </li>
+            <li class="nav__item--header">
+              <a class="nav__link" href="#projects">Projects</a>
+            </li>
+            <li class="nav__item--header">
+              <a  class="nav__link" href="#contact">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-caption">
+          <h1 class="caption">Tatiana Kazakova</h1>
+          <p class="caption__desc">Junior Front-End developer</p>
+        </div>
+        <section class="about-me">
+          <h2 class="about-caption">About me</h2>
+          <p class="about__desc"> I'm confused every time when I need to tell about myself. I'm cool ^_^</p>
+        </section>
+      </div>
+    </header>
+    <main class="wrapper">
+      <aside class="left-side">
+        <section class="contact" id="contact">
+          <h2 class="about-caption">Contact</h2>
+          <ul class="side-contact">
+            <li class="side-contact__item"> discord:
+              <a class="side-contact__link" href="https://discord.com/channels/@me"> @MAO #3760</a>
+            </li>
+            <li class="side-contact__item"> github: 
+              <a class="side-contact__link" href="https://github.com/IdzanamiMAO">IdzanamiMAO</a>
+            </li>
+            <li class="address">Address:
+              <p class="address-desc">Rostov-on-Don, Russia</p>
+            </li>
+          </ul>
+        </section>
+        <section class="education" id="education">
+          <h2 class="about-caption">Education</h2>
+          <ul class="education__list">
+            <li class="education__item"> 2012-2018
+              <p class="education__institution">Rostov State University of Civil Engineering, Rostov-on-Don</p>
+              <p class="education__speciality">Land management and cadastres</p>
+              <p class="education__degree">Master's degree</p>
+            </li>
+            <li class="education__item"> 2020
+              <p class="education__institution">stepik</p>
+              <p class="education__speciality">Веб-разработка для начинающих: HTML и CSS</p>
+              <a class="education__link" href="https://stepik.org/cert/796509">Certificate</a> 
+            </li>
+          </ul>
+        </section>
+      </aside>
+      <aside class="right-side">
+        <section class="skills" id="skills">
+          <h2 class="about-caption">Skills</h2>
+          <ul class="education__list">
+            <li class="skills__item">HTML/HTML5</li>
+            <li class="skills__item">CSS3</li>
+            <li class="skills__item">BEM</li>
+            <li class="skills__item">Figma</li>
+            <li class="skills__item">English - A2. My english is bad. <span class="rus">Из бед и огорчений T_T</span></li>
+          </ul>
+        </section>
+        <section class="examples" id="examples">
+          <h2 class="about-caption">Code examples</h2>
+          <pre><code class="examples__code">
+    &lt;div class=&quot;slider&quot;&gt;
+      &lt;button class=&quot;control&quot;&gt;&lt;/button&gt;
+        &lt;div class=&quot;animals__card&quot;&gt;
+          &lt;img src=&quot;&quot; alt=&quot;Deer&quot; class=&quot;animals__card-img&quot;&gt;
+          &lt;h4 class=&quot;animals__card-title&quot;&gt;Deer&lt;/h4&gt;
+          &lt;p class=&quot;animals__card-disc&quot;&gt;Naturalist investigation&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;animals__card&quot;&gt;
+          &lt;img src=&quot;&quot; alt=&quot;Squirrel&quot; class=&quot;animals__card-img&quot;&gt;
+          &lt;h4 class=&quot;animals__card-title&quot;&gt;Squirrel&lt;/h4&gt;
+          &lt;p class=&quot;animals__card-disc&quot;&gt;Kamikaze squirrels&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;animals__card&quot;&gt;
+          &lt;img src=&quot;&quot; alt=&quot;Bird&quot; class=&quot;animals__card-img&quot;&gt;
+          &lt;h4 class=&quot;animals__card-title&quot;&gt;Bird&lt;/h4&gt;
+          &lt;p class=&quot;animals__card-disc&quot;&gt;Birds Fight club&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;button class=&quot;control&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+          </code></pre>
+        </section>
+        <section class="projects" id="projects">
+          <h2 class="about-caption">Projects</h2>
+          <div class="card__wrapper">
+            <a class="projects__card" href="https://idzanamimao.github.io/Pied-Piper/">
+              <img class="img__projects" src="./assets/img/PiedPiper.jpg" alt="PiedPiper">
+              <p class="projects__card--subtitle">Pied Piper</p>
+            </a>
+            <a class="projects__card" href="https://idzanamimao.github.io/webdev/">
+              <img class="img__projects" src="./assets/img/WebDew.jpg" alt="webdev">
+              <p class="projects__card--subtitle">Webdev</p>
+            </a>
+            <a class="projects__card" href="https://idzanamimao.github.io/Cozy_House/">
+              <img class="img__projects" src="./assets/img/CozyHouse.jpg" alt="CozyHouse">
+              <p class="projects__card--subtitle">Cozy House</p>
+            </a>
+            <a class="projects__card" href="https://rolling-scopes-school.github.io/idzanamimao-JSFEPRESCHOOL/museum">
+              <img class="img__projects" src="./assets/img/Museum.jpg" alt="museum">
+              <p class="projects__card--subtitle">Museum</p>
+            </a>
+          </div>
+        </section>
+      </aside>
+    </main>
+    <footer>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://discord.com/channels/@me">
+              <img class="img__footer" src="./assets/svg/discord_dark.svg" alt="discord">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="https://github.com/IdzanamiMAO">
+              <img class="img__footer" src="./assets/svg/github.svg" alt="github">
+            </a>
+          </li>
+          <li class="footer__copyright">
+              <p>© by MAO</p>
+              <p>2022</p>
+          </li>
+          <li class="footer__item">
+            <a href="https://rs.school/js/">
+              <img class="img__footer" src="./assets/svg/rs_school_js.svg" alt="rs_school_js">
+            </a>
+          </li>
+        </ul>
+    </footer>
+  </body>
+</html>
