@@ -310,7 +310,7 @@ p {
 }/*закончили с футером*/
 
 
-@media (max-width: 768px) { /*для телефонов*/
+@media screen and (max-width: 768px) { /*для телефонов*/
   .header,
   .wrapper {
     flex-direction: column;
@@ -320,6 +320,34 @@ p {
   .nav__list {
     position: absolute;
     top: 0px;
+    justify-content: center;
+    padding: 0px 10px;
+    
+  }
+  .nav__item,
+  .footer__item,
+  .footer__copyright {
+    margin-left: 0px;
+    padding: 10px 5px;
+  }
+
+  .nav__item {
+    line-height: 10px;
+  }
+  .nav__link {
+    margin-left: 0px;
+    line-height: 10px;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+  }
+
+  .logo-photo {
+    margin-right: 0px;
+  }
+  .left-sidebar {
+    min-width: auto;
   }
 
   .headline,
@@ -329,6 +357,9 @@ p {
   .example,
   .projects {
     margin-top: 30px;
+  }
+  .example {
+    overflow: scroll;
   }
 
   .card-wrapper {
@@ -352,4 +383,5 @@ p {
   .projects__img {
     max-width: 100%;
   }
+ 
 }
