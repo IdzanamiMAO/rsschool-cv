@@ -334,9 +334,9 @@ p {
   .nav__item {
     line-height: 10px;
   }
+
   .nav__link {
     margin-left: 0px;
-    line-height: 10px;
     font-family: Roboto;
     font-size: 12px;
     line-height: 15px;
@@ -346,6 +346,7 @@ p {
   .logo-photo {
     margin-right: 0px;
   }
+
   .left-sidebar {
     min-width: auto;
   }
