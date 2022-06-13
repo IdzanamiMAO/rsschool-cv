@@ -24,27 +24,13 @@ _Qualification:_ Bachelor, Master's degree
 - Figma
 - English - A2. _My english is bad. Из бед и огорчений_ ToT
 
-## Code examples:
+## Code example:
 ```
-<div class="slider">
-  <button class="control"></button>
-    <div class="animals__card">
-      <img src="" alt="Deer" class="animals__card-img">
-      <h4 class="animals__card-title">Deer</h4>
-      <p class="animals__card-disc">Naturalist investigation</p>
-    </div>
-    <div class="animals__card">
-      <img src="" alt="Squirrel" class="animals__card-img">
-      <h4 class="animals__card-title">Squirrel</h4>
-      <p class="animals__card-disc">Kamikaze squirrels</p>
-    </div>
-    <div class="animals__card">
-      <img src="" alt="Bird" class="animals__card-img">
-      <h4 class="animals__card-title">Bird</h4>
-      <p class="animals__card-disc">Birds Fight club</p>
-    </div>
-  <button class="control"></button>
-</div>
+function multiply(a, b){
+  let x;
+  x =  a * b;
+  return x;
+}
 ```
 
 ## My study projects:

@@ -1,239 +1,355 @@
-html{
+html {
   box-sizing: border-box;
-  /*max-width: 1920px;*/
   scroll-behavior: smooth;
 }
-body{
-  margin: 0px;
-  max-width: 1440px;
-  margin: 0px auto;
+
+body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0px auto;
+  max-width: 1440px;
 }
-li{
+
+li {
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
 }
-pre, p{
+
+pre,
+p {
   margin: 0px;
 }
 
 /*хедр*/
-.header{
+.header {
   display: flex;
   justify-content: space-between;
-  padding: 0px;
   margin: 0px;
+  padding: 0px;
 }
-.logo-photo{
+
+.logo-photo {
   max-width: 500px;
-  margin: 0px 30px 0px 0px;
+  margin-right: 30px;
 }
-.container{
+
+.container {
   flex-direction: column;
   flex-grow: 1;
 }
-.nav__list--header, .footer__list{
+
+.nav__list,
+.footer__list {
   display: flex;
   justify-content: space-between;
   align-self: baseline;
-  padding: 0px 30px;
   margin: 0px;
+  padding: 0px 30px;
+
 }
-.nav__item--header{
+
+.nav__item {
   margin-left: 40px;
   line-height: 40px;
 }
-.nav__item--header:first-child{
+
+.nav__item:first-child {
   margin-left: 0px;
 }
-.nav__item--header:hover, .side-contact__link:hover, .education__link:hover, .projects__card--subtitle:hover{
+
+.nav__item:hover,
+.contacts__link:hover,
+.education__link:hover,
+.projects__link:hover,
+.footer__item:hover {
+  filter: drop-shadow(0 0 5px #cf02a3);
   transition: .3s;
   cursor: pointer;
-  filter: drop-shadow(0 0 5px #cf02a3);
 }
-.nav__item--header:hover{
-  background-color: #cf02a371;
+
+.nav__item:hover {
+  background-color: #cf02a33f;
 }
-.nav__link:visited, .side-contact__link:visited, .education__link:visited, .projects__card--subtitle:visited{
-  color: #cf02a3;
-}
-.nav__link{
+
+.nav__link {
   font-family: Roboto;
-  font-weight: 300;
   font-size: 22px;
+  font-weight: 300;
   letter-spacing: 2px;
   color: #000000;
 }
-.header-caption{ 
-  line-height: 51px;
+
+.nav__link:visited,
+.contacts__link:visited,
+.education__link:visited,
+.projects__link:visited {
+  color: #cf02a3;
+}
+
+.headline {
+  margin-top: 190px;
   padding-left: 30px;
-  margin-top: 200px;
+  line-height: 51px;
   background: linear-gradient(to right, #cf02a3, #2c2166);
 }
-.caption{
+
+.title {
+  margin: 0px;
+  padding-top: 20px;
   font-family: Forum;
   font-size: 28px;
   line-height: 51px;
+  font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0px;
-  padding-top: 20px;
 }
-.caption__desc{
-  font-family: Roboto;
-  font-weight: 200;
-  font-size: 20px;
-  line-height: 50px;
-  letter-spacing: 2px;
-  color: #ffffff;
+
+.subtitle {
   margin: 0px;
   padding-bottom: 20px;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #ffffff;
 }
-.about-me{
-  margin-top: 125px;
+
+.summary {
+  margin-top: 140px;
 }
-.about-caption{
+
+.section-caption {
+  margin: 0px;
+  padding-left: 20px;
   font-family: Forum;
   font-size: 25px;
   line-height: 50px;
+  font-weight: bold;
   letter-spacing: 2px;
-  padding-left: 20px;
-  margin: 0px;
   border-left: 10px solid #cf02a3;
 }
-.about-caption:hover{
+
+.section-caption:hover {
   background-color: #cf02a3;
   transition: .3s;
   cursor: pointer;
 }
-.about__desc, .examples__code{
+
+.section-desc,
+.snippet {
+  margin: 0px;
+  padding: 15px 30px;
   font-family: Forum;
   font-size: 25px;
-  text-align: justify;
   line-height: 35px;
   letter-spacing: 2px;
-  padding: 15px 30px;
-  margin: 0px;
 } /* закончили с хедером*/
 
-.wrapper{
+
+.wrapper {
   display: flex;
   justify-content: space-between;
   margin: 0px;
 }
 
+
 /*левая панель под фото*/
-.left-side{
-  min-width: 470px;
-  margin: 0px 30px 0px 0px;
+.left-sidebar {
+  margin-right: 30px;
   padding-left: 30px;
   padding-top: 20px;
+  min-width: 470px;
   background-color: #cf02a33f;
 }
-.contact, .education{
-  width: 470px;
-}
-.side-contact, .education__list, .footer__item{
-  box-sizing: border-box;
-  padding: 15px 30px;
+
+.contacts__list,
+.education__list,
+.skills__list,
+.footer__item {
   margin: 0px;
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+
+.contacts__item,
+.education__item,
+.skills__item {
+  padding-bottom: 10px;
   font-family: Forum;
   font-size: 25px;
-  text-align: left;
-  line-height: 35px;
+  line-height: 30px;
   letter-spacing: 2px;
 }
-.side-contact__item{
-  padding: 5px 0px;
-}
-.side-contact__link, .education__link, .projects__card--subtitle{
+
+.contacts__link,
+.education__link,
+.projects__link {
+  font-style: italic;
   text-decoration: underline;
   text-decoration-color: #cf02a371;
   color: #000000;
-  font-style: italic;
 }
-.address{
+
+.address {
   padding-top: 40px;
 }
-.address-desc{
-  padding: 5px 0px;
-  margin: 0px;
-}
-.education{
+
+.education {
   margin-top: 100px;
 }
-.education__institution{
-  margin: 10px 0px;
-}
-.education__speciality, .education__degree{
-  font-size: 22px;
-  line-height: 35px;
-  margin: 10px 0px;
-}
-.education__degree{
-  font-style: italic;
-}
-.education__item{
+
+.education__item {
   padding-bottom: 50px;
+  font-weight: bold;
+}
+
+.education__institution {
+  padding: 5px 0px;
+  font-weight: normal;
+}
+
+.education__speciality,
+.education__degree {
+  margin: 5px 0px;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.education__degree {
+  font-style: italic;
 } /*закончили с левой панелью*/
 
+
 /*правая панель*/
-.right-side{
+.right-sidebar {
+  flex-direction: column;
   flex-grow: 1;
   padding-top: 20px;
 }
-.skills__item{
-  padding-bottom: 10px;
-}
-.rus{
+
+.rus {
   font-style: italic;
+  font-size: 22px;
 }
-.examples{
-  margin-top: 85px;
-}
-.projects{
+
+.example {
   margin-top: 90px;
 }
-.card__wrapper{
+
+.projects {
+  margin-top: 80px;
+}
+
+.card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px 30px;
+  padding: 15px 0px 0px 30px;
 }
-.projects__card{
-  opacity: 0.6;
-  margin: 0px 20px 20px 0px;
+
+.projects__link {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  opacity: 0.7;
 }
-.projects__card:hover{
+
+.projects__link:nth-of-type(even) {
+  margin-right: 0px;
+}
+
+.projects__link:last-child {
+  margin-bottom: 0px;
+}
+
+.projects__link:hover {
   opacity: 1;
 }
-.img__projects{
-  width: 400px;
-  
+
+.projects__img {
+  max-width: 430px;
 }
-.projects__card--subtitle{
+
+.projects__name {
   text-align: center;
 }/*закончили с правой колонкой и мейном вообщк*/
 
+
 /*футер*/
-.footer__list{
-  align-items: center;
+.inner {
+  display: flex;
   justify-content: center;
+  margin: 0px;
 }
-.img__footer{
+
+.footer__list {
+  align-items: center;
+  align-self: center;
+}
+
+.footer__item {
+  align-items: center;
+  margin-left: 40px;
+}
+
+.footer__img {
   width: 35px;
 }
-.footer__item:hover{
-  transition: .3s;
-  cursor: pointer;
-  filter: drop-shadow(0 0 5px #cf02a3);
-}
-.footer__copyright{
-  text-align: center;
+
+.footer__copyright {
+  margin-left: 40px;
   font-size: 15px;
   line-height: 17px;
+  text-align: center;
+}/*закончили с футером*/
+
+
+@media (max-width: 768px) { /*для телефонов*/
+  .header,
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav__list {
+    position: absolute;
+    top: 0px;
+  }
+
+  .headline,
+  .summary,
+  .education,
+  .skills,
+  .example,
+  .projects {
+    margin-top: 30px;
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects__link {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .projects__link:nth-of-type(even) {
+    margin-right: 0px;
+  }
+
+  .projects__link:last-child {
+    margin-bottom: 0px;
+  }
+
+  .projects__img {
+    max-width: 100%;
+  }
 }
