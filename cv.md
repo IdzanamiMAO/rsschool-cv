@@ -3,7 +3,6 @@
 ## Contact:
 * discord: [@MAO #3760](https://discord.com/channels/@me)
 * github: [IdzanamiMAO](https://github.com/IdzanamiMAO)
-*********
 
 ## About me:
 *I'm confused every time when I need to tell about myself. I'm cool ^_^*
@@ -17,7 +16,6 @@ _Qualification:_ Bachelor, Master's degree
 * [stepik](https://stepik.org/learn)
 * [Хекслет](https://ru.hexlet.io/my)
 * [Sololearn](https://www.sololearn.com/profile/21661792)
-*********
 
 ## Skills:
 - HTML/HTML5
