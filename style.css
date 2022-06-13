@@ -246,4 +246,36 @@ pre, p{
   text-align: center;
   font-size: 15px;
   line-height: 17px;
+}/*закончили с футером*/
+
+
+@media (max-width: 768px){ /*для телефонов*/
+  .header, .wrapper{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav__list{
+    position: absolute;
+    top: 0px;
+  }
+  .headline, .summary, .education, .skills, .example, .projects{
+    margin-top: 30px;
+  }
+  .card-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .projects__link{
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .projects__link:nth-of-type(even){
+    margin-right: 0px;
+  }
+  .projects__link:last-child{
+    margin-bottom: 0px;
+  }
+  .projects__img{
+    max-width: 100%
+  }
 }
