@@ -4,21 +4,18 @@
 * discord: [@MAO #3760](https://discord.com/channels/@me)
 * github: [IdzanamiMAO](https://github.com/IdzanamiMAO)
 
-
 ## About me:
 *I'm confused every time when I need to tell about myself. I'm cool ^_^*
 
-
 ## Education:
 _University:_ Rostov State University of Civil Engineering, Rostov-on-Don\
-_Area of study:_ Land management and cadastres\
-_Qualification:_ Bachelor, Master's degree\
+_Area of study:_ Land Cadastre\
+_Qualification:_ Bachelor, Master's degree
 
-**courses on:**
+**Courses on:**
 * [stepik](https://stepik.org/learn)
 * [Хекслет](https://ru.hexlet.io/my)
 * [Sololearn](https://www.sololearn.com/profile/21661792)
-
 
 ## Skills:
 - HTML/HTML5
@@ -26,7 +23,6 @@ _Qualification:_ Bachelor, Master's degree\
 - BEM
 - Figma
 - English - A2. _My english is bad. Из бед и огорчений_ ToT
-
 
 ## Code example:
 ```
@@ -36,7 +32,6 @@ function multiply(a, b){
   return x;
 }
 ```
-
 
 ## My study projects:
 + [stepik](https://idzanamimao.github.io/stepik/)
