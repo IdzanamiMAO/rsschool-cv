@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/ico/favicon.ico">
+  </head>
+  <body>
+    <header class="header">
+      <img  class="logo-photo" src="./assets/img/logo-photo.JPG" alt="logo-photo">
+      <div class="container">
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#skills">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#education">Education</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#example">Code examples</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#projects">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a  class="nav__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="headline">
+          <h1 class="title">Tatiana Kazakova</h1>
+          <p class="subtitle">Junior Front-End developer</p>
+        </div>
+        <section class="summary">
+          <h2 class="section-caption">About me</h2>
+          <p class="section-desc"> I'm confused every time when I need to tell about myself. I'm cool ^_^</p>
+        </section>
+      </div>
+    </header>
+    <main class="wrapper">
+      <div class="left-sidebar">
+        <section id="contacts">
+          <h2 class="section-caption">Contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item"> discord:
+              <a class="contacts__link" href="https://discord.com/channels/@me"> @MAO #3760</a>
+            </li>
+            <li class="contacts__item"> github: 
+              <a class="contacts__link" href="https://github.com/IdzanamiMAO">IdzanamiMAO</a>
+            </li>
+            <li class="contacts__item address">Address:
+              <p>Rostov-on-Don, Russia</p>
+            </li>
+          </ul>
+        </section>
+        <section class="education" id="education">
+          <h2 class="section-caption">Education</h2>
+          <ul class="education__list">
+            <li class="education__item"> 2012-2018
+              <p class="education__institution">Rostov State University of Civil Engineering, Rostov-on-Don</p>
+              <p class="education__speciality">Land management and cadastres</p>
+              <p class="education__degree">Master's degree</p>
+            </li>
+            <li class="education__item"> 2020
+              <p class="education__institution">stepik</p>
+              <p class="education__speciality">Веб-разработка для начинающих: HTML и CSS</p>
+              <a class="education__link" href="https://stepik.org/cert/796509">Certificate</a> 
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="right-sidebar">
+        <section id="skills">
+          <h2 class="section-caption">Skills</h2>
+          <ul class="skills__list">
+            <li class="skills__item">HTML/HTML5</li>
+            <li class="skills__item">CSS3</li>
+            <li class="skills__item">BEM</li>
+            <li class="skills__item">Figma</li>
+            <li class="skills__item">English - A2. My english is bad. <span class="rus">Из бед и огорчений T_T</span></li>
+          </ul>
+        </section>
+        <section class="example" id="example">
+          <h2 class="section-caption">Code example</h2>
+          <pre class="snippet"><code>
+function multiply(a, b){
+ let x;
+  x =  a * b;
+  return x;
+}
+          </code></pre>
+        </section>
+        <section class="projects" id="projects">
+          <h2 class="section-caption">Projects</h2>
+          <div class="card-wrapper">
+            <a class="projects__link" href="https://idzanamimao.github.io/Pied-Piper/">
+              <img class="projects__img" src="./assets/img/PiedPiper.jpg" alt="PiedPiper">
+              <p class="projects__name">Pied Piper</p>
+            </a>
+            <a class="projects__link" href="https://idzanamimao.github.io/webdev/">
+              <img class="projects__img" src="./assets/img/WebDew.jpg" alt="webdev">
+              <p class="projects__name">Webdev</p>
+            </a>
+            <a class="projects__link" href="https://idzanamimao.github.io/Cozy_House/">
+              <img class="projects__img" src="./assets/img/CozyHouse.jpg" alt="CozyHouse">
+              <p class="projects__name">Cozy House</p>
+            </a>
+            <a class="projects__link" href="https://rolling-scopes-school.github.io/idzanamimao-JSFEPRESCHOOL/museum">
+              <img class="projects__img" src="./assets/img/Museum.jpg" alt="museum">
+              <p class="projects__name">Museum</p>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="inner">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="https://discord.com/channels/@me">
+            <img class="footer__img" src="./assets/svg/discord_dark.svg" alt="discord">
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://github.com/IdzanamiMAO">
+            <img class="footer__img" src="./assets/svg/github.svg" alt="github">
+          </a>
+        </li>
+        <li class="footer__copyright">
+            <p>© by MAO</p>
+            <p>2022</p>
+        </li>
+        <li class="footer__item">
+          <a href="https://rs.school/js/">
+            <img class="footer__img" src="./assets/svg/rs_school_js.svg" alt="rs_school_js">
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
