@@ -89,11 +89,14 @@ padding-left: 30%;
   margin: 0px;
 }
 
+.photo {
+  position: relative;
+  top: -42px;
+}
 
 /*левая панель под фото*/
 .left-sidebar {
-  /*padding-left: 1%;*/
-  width: 30%;
+  width:500px;
   background-color: #cf02a33f;
 }
 
@@ -179,8 +182,8 @@ padding-left: 30%;
 .right-sidebar {
   flex-direction: column;
   flex-grow: 1;
-  width: 70%;
-  /*margin-left: 1%;*/
+  /*width: 69%;*/
+  margin-left: 10px;
 }
 
 .headline {
@@ -263,7 +266,7 @@ padding-left: 30%;
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px 0px 0px 30px;
+  padding: 15px 0px 15px 30px;
 }
 
 .card-inner {
@@ -276,7 +279,7 @@ padding-left: 30%;
   margin-right: 20px;
   margin-bottom: 20px;
   text-decoration: none;
-  opacity: 1;
+  opacity: 1; 
 }
 
 .projects__link:nth-of-type(even) {
@@ -292,12 +295,12 @@ padding-left: 30%;
 }
 
 .projects__img {
-  max-width: 350px;
+  max-width: 440px;
 }
 
 .projects__name {
   text-align: center;
-}/*закончили с правой колонкой и мейном вообщк*/
+}/*закончили с правой колонкой и мейном вообще*/
 
 
 /*футер*/
@@ -326,6 +329,10 @@ padding-left: 30%;
   font-size: 15px;
   line-height: 17px;
   text-align: center;
+}
+
+.footer__copyright:hover{
+  cursor: default;
 }/*закончили с футером*/
 
 
