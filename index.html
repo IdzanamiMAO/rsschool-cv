@@ -38,10 +38,10 @@
           <h2 class="section-caption">Contacts</h2>
           <ul class="contacts__list">
             <li class="contacts__item">discord:
-              <a class="contacts__link LINK" href="https://discord.com/channels/@me">@MAO #3760</a>
+              <a class="contacts__link link" href="https://discord.com/channels/@me">@MAO #3760</a>
             </li>
             <li class="contacts__item">github:
-              <a class="contacts__link LINK" href="https://github.com/IdzanamiMAO">IdzanamiMAO</a>
+              <a class="contacts__link link" href="https://github.com/IdzanamiMAO">IdzanamiMAO</a>
             </li>
             <li class="contacts__item address">Address:
               <p>Rostov-on-Don, Russia</p>
@@ -52,29 +52,27 @@
           <h2 class="section-caption">Education</h2>
           <div class="education__list">
             <div class="education__item">
-              <p>2012-2018</p>
+              <p class="education__years">2012-2018</p>
               <p class="education__institution">Rostov State University of Civil Engineering, Rostov-on-Don</p>
               <p class="education__speciality">Land management and cadastres</p>
               <p class="education__degree">Master's degree</p>
             </div>
             <div class="education__item">
-              <p>2020</p>
+              <p class="education__years">2020</p>
               <p class="education__institution">stepik</p>
               <p class="education__speciality">Веб-разработка для начинающих: HTML и CSS</p>
-              <a class="education__link LINK" href="https://stepik.org/cert/796509">Certificate</a>
+              <a class="education__link link" href="https://stepik.org/cert/796509">Certificate</a>
             </div>
             <div class="education__item">
-              <p>2022</p>
-              <div class="education__courses">
-                <p class="education__institution">The Rolling Scopes</p>
-                <p class="education__speciality">«JavaScript/Front-end. Stage 0»</p>
-                <a class="education__link LINK" href="https://rs.school/js-stage0/">link</a>
-              </div>
-              <div class="education__courses">
-                <p class="education__institution">stepik</p>
-                <p class="education__speciality">JavaScript для начинающих</p>
-                <a class="education__link LINK" href="https://stepik.org/cert/1624681">Certificate</a>
-              </div>
+              <p class="education__years">2022</p>
+              <p class="education__institution">The Rolling Scopes</p>
+              <p class="education__speciality">«JavaScript/Front-end. Stage 0»</p>
+              <a class="education__link link" href="https://rs.school/js-stage0/">link</a>
+            </div>
+            <div class="education__item">
+              <p class="education__institution">stepik</p>
+              <p class="education__speciality">JavaScript для начинающих</p>
+              <a class="education__link link" href="https://stepik.org/cert/1624681">Certificate</a>
             </div>
           </div>
         </section>
@@ -86,9 +84,11 @@
         </div>
         <section class="summary">
           <h2 class="section-caption">About me</h2>
-          <p class="section-desc">Hi, I'm just starting to learn the profession of Junior Front-End developer.</p>
-          <p class="section-desc">I don't have commercial development experience yet, but I have several training <a class="LINK" href="#projects">projects</a>. I have good interpersonal skills, I'm an excellent team worker. I'm willing to learn and develop new skills and knowledge but I also want to apply them to the real products.</p>
-          <p class="section-desc">I'm looking forward to working in cool teams.</p>
+          <div class="section-desc">
+            <p class="text">Hi, I'm just starting to learn the profession of Junior Front-End developer.</p>
+            <p class="text">I don't have commercial development experience yet, but I have several training <a class="link" href="#projects">projects</a>. I have good interpersonal skills, I'm an excellent team worker. I'm willing to learn and develop new skills and knowledge but I also want to apply them to the real products.</p>
+            <p class="text">I'm looking forward to working in cool teams.</p>
+          </div>
         </section>
         <section class="skills" id="skills">
           <h2 class="section-caption">Skills</h2>
@@ -102,50 +102,53 @@
         </section>
         <section class="example" id="example">
           <h2 class="section-caption">Code example</h2>
-          <pre class="snippet"><code>
-function divCon(x){
+          <pre class="snippet"><code> function divCon(x){
+
   let str;
   let num;
+
   str = x.reduce((acc, i) =&gt; {
     if (typeof i === typeof &quot;0&quot;) {
       return acc + Number(i);
     } return acc;
   }, 0);
+
   num = x.reduce((acc, i) =&gt; {
     if (typeof i === typeof 0) {
       return acc + i;
     } return acc;
   }, 0);
+
   return num - str;
 }</code></pre>
-          <a class="example__link tack__link LINK" href="https://www.codewars.com/kata/57eaec5608fed543d6000021">tack</a>
+          <a class="section-desc link" href="https://www.codewars.com/kata/57eaec5608fed543d6000021">tack</a>
           <p class="section-desc">More solved tacks on
-            <a class="example__link LINK" href="https://www.codewars.com/users/IdzanamiMAO/completed">codewars</a>
+            <a class="link" href="https://www.codewars.com/users/IdzanamiMAO/completed">codewars</a>.
           </p>
         </section>
         <section class="projects" id="projects">
           <h2 class="section-caption">Projects</h2>
           <div class="card-wrapper">
-            <div class="card-inner projects__link">
+            <div class="card-inner">
               <a href="https://idzanamimao.github.io/Cozy_House/">
                 <img class="projects__img" src="./assets/img/CozyHouse.jpg" alt="CozyHouse">
-                <p class="projects__name">Cozy House</p>
               </a>
-              <a class="repository__link LINK" href="https://github.com/IdzanamiMAO/Cozy_House">repository</a>
+              <p class="projects__name">Cozy House</p>
+              <a class="repository__link link" href="https://github.com/IdzanamiMAO/Cozy_House">repository</a>
             </div>
-            <div class="card-inner projects__link">
+            <div class="card-inner">
               <a href="https://rolling-scopes-school.github.io/idzanamimao-JSFEPRESCHOOL/museum">
                 <img class="projects__img" src="./assets/img/Museum.jpg" alt="museum">
-                <p class="projects__name">Museum</p>
               </a>
-              <a class="repository__link LINK" href="https://github.com/IdzanamiMAO/museum">repository</a>
+              <p class="projects__name">Museum</p>
+              <a class="repository__link link" href="https://github.com/IdzanamiMAO/museum">repository</a>
             </div>
-            <div class="card-inner projects__link">
+            <div class="card-inner">
               <a href="https://rolling-scopes-school.github.io/idzanamimao-JSFEPRESCHOOL2022Q2/travel/">
                 <img class="projects__img" src="./assets/img/Travel.jpg" alt="travel">
-                <p class="projects__name">Travel</p>
               </a>
-              <a class="repository__link LINK" href="">repository</a>
+              <p class="projects__name">Travel</p>
+              <a class="repository__link link" href="">repository</a>
             </div>
           </div>
         </section>
