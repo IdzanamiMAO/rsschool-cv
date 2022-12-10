@@ -26,17 +26,11 @@ p {
 
 /*хедр*/
 .header {
-padding-left: 30%;
+  display: block;
+  margin-left: 30%;
 }
-
-.logo-photo {
-  width: 100%;
-  max-width: 500px;
-}
-
-.container {
-  flex-direction: column;
-  flex-grow: 1;
+.humburger-menu {
+  display: none;
 }
 
 .nav__list,
@@ -46,10 +40,10 @@ padding-left: 30%;
   align-self: baseline;
   margin: 0px;
   padding: 0px 30px;
-
 }
 
 .nav__item {
+  text-align: center;
   margin-left: 40px;
   line-height: 40px;
 }
@@ -59,18 +53,11 @@ padding-left: 30%;
 }
 
 .nav__item:hover,
-.contacts__link:hover,
-.education__link:hover,
-.example__link:hover,
-.projects__link:hover,
-.footer__item:hover {
+.link:hover {
+  background-color: #cf02a33f;
   filter: drop-shadow(0 0 5px #cf02a3);
   transition: .3s;
   cursor: pointer;
-}
-
-.nav__item:hover {
-  background-color: #cf02a33f;
 }
 
 .nav__link {
@@ -86,22 +73,22 @@ padding-left: 30%;
 .wrapper {
   display: flex;
   flex-wrap: nowrap;
-  margin: 0px;
 }
 
-.photo {
-  position: relative;
-  top: -42px;
-}
 
 /*левая панель под фото*/
 .left-sidebar {
-  width:500px;
+  min-width: 30%;
   background-color: #cf02a33f;
 }
 
+.logo-photo {
+  width: 100%;
+  max-width: 500px;
+}
+
 .contacts {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .contacts__list,
@@ -115,20 +102,17 @@ padding-left: 30%;
 
 .contacts__item,
 .education__item,
-.skills__item {
+.skills__item,
+.projects__name {
   padding-bottom: 10px;
   font-family: Forum;
   font-size: 25px;
   line-height: 30px;
   letter-spacing: 2px;
+  color: #000000;
 }
 
-.contacts__link,
-.education__link,
-.example__link,
-.tack__link,
-.repository__link,
-.projects__link {
+.link {
   font-family: Forum;
   font-size: 25px;
   font-style: italic;
@@ -147,15 +131,11 @@ padding-left: 30%;
 
 .education__item {
   padding-bottom: 50px;
+}
+
+.education__years {
   font-weight: bold;
-}
-
-.education__courses {
-  padding-bottom: 25px;
-}
-
-.education__courses:last-of-type {
-  padding-bottom: 0px;
+  text-align: center;
 }
 
 .education__institution {
@@ -167,7 +147,7 @@ padding-left: 30%;
 .education__degree,
 .education__link {
   margin: 5px 0px;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 30px;
   font-weight: normal;
 }
@@ -175,15 +155,16 @@ padding-left: 30%;
 .education__degree,
 .education__link {
   font-style: italic;
-} /*закончили с левой панелью*/
+}
+/*закончили с левой панелью*/
 
 
 /*правая панель*/
 .right-sidebar {
+  max-width: 70%;
   flex-direction: column;
   flex-grow: 1;
-  /*width: 69%;*/
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .headline {
@@ -216,8 +197,11 @@ padding-left: 30%;
   color: #ffffff;
 }
 
-.summary {
-  margin-top: 100px;
+.summary,
+.skills,
+.example,
+.projects {
+  margin-top: 80px;
 }
 
 .section-caption {
@@ -246,21 +230,13 @@ padding-left: 30%;
   line-height: 35px;
   letter-spacing: 2px;
 }
-.tack__link {
-  margin: 0px;
-  padding: 0px 30px;
+
+.text {
+  padding-top: 15px;
 }
 
-.rus {
-  font-style: italic;
-  font-size: 22px;
-}
-
-.summary,
-.skills,
-.example,
-.projects {
-  margin-top: 80px;
+.text:first-of-type{
+  padding-top: 0px;
 }
 
 .card-wrapper {
@@ -273,34 +249,33 @@ padding-left: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.projects__link {
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-decoration: none;
-  opacity: 1; 
 }
 
-.projects__link:nth-of-type(even) {
+.card-inner:nth-of-type(even) {
   margin-right: 0px;
 }
 
-.projects__link:last-child {
-  margin-bottom: 0px;
-}
-
-.projects__link:hover {
-  opacity: 0.7;
-}
-
 .projects__img {
-  max-width: 440px;
+  max-width: 390px;
+  opacity: 1;
+}
+
+.projects__img:hover,
+.footer__img:hover {
+  opacity: 0.8;
+  filter: drop-shadow(0 0 5px #cf02a3);
+  transition: .3s;
+  cursor: pointer;
 }
 
 .projects__name {
   text-align: center;
-}/*закончили с правой колонкой и мейном вообще*/
+padding: 5px 0;
+}
+/*закончили с правой колонкой и мейном вообще*/
 
 
 /*футер*/
@@ -333,23 +308,68 @@ padding-left: 30%;
 
 .footer__copyright:hover{
   cursor: default;
-}/*закончили с футером*/
+}
+/*закончили с футером*/
 
 
 @media screen and (max-width: 768px) { /*для телефонов*/
-  .header,
-  .wrapper {
+  .header {
+    margin: 0;
+    position: relative;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    align-items: flex-end;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 25px 25px;
+    position: absolute;
+    right: 0px;
+    z-index: 900;
+    width: 35px;
+    height: 30px;
+  }
+
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all .8s;
+  }
+
+  .change .line-1 {
+    transform: rotateZ(-45deg) translate(-8px, 6px);
+  }
+
+  .change .line-3 {
+    transform: rotateZ(45deg) translate(-8px, -6px);
+  }
+
+  .change .line-2 {
+    opacity: 0;;
   }
 
   .nav__list {
-    position: absolute;
-    top: 0px;
-    justify-content: center;
-    padding: 0px 5px;
+    position: fixed;
+    right: -300px;
+    z-index: 100;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 60px 25px;
+    transition: right 1s;
   }
-  .nav__item,
+
+  .change .nav__list {
+    right: 0;
+  }
+
+  .nav__item {
+    margin-left: 0px;
+    padding: 10px 0;
+  }
+
   .footer__item,
   .footer__copyright {
     margin-left: 0px;
@@ -363,9 +383,14 @@ padding-left: 30%;
   .nav__link {
     margin-left: 0px;
     font-family: Roboto;
-    font-size: 10px;
-    line-height: 15px;
-    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
   }
 
   .logo-photo {
@@ -376,6 +401,12 @@ padding-left: 30%;
   .left-sidebar {
     min-width: auto;
     margin-right: 0px;
+    padding-left: 0px;
+  }
+
+  .right-sidebar {
+    max-width: 100%;
+    flex-direction: column;
     padding-left: 0px;
   }
 
@@ -402,21 +433,15 @@ padding-left: 30%;
     padding: 15px 0px;
   }
 
-  .projects__link {
-    margin-right: 0px;
-    margin-bottom: 20px;
-  }
-
-  .projects__link:nth-of-type(even) {
+  .card-inner {
     margin-right: 0px;
   }
 
-  .projects__link:last-child {
-    margin-bottom: 0px;
+  .card-inner:last-of-type {
+    margin-bottom: 60px;
   }
 
   .projects__img {
     max-width: 100%;
   }
- 
 }
