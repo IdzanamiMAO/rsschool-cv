@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,9 +27,12 @@ p {
 
 /*хедр*/
 .header {
+  position: absolute;
+  right: 0;
   display: block;
-  margin-left: 30%;
+  justify-content: flex-end;
 }
+
 .humburger-menu {
   display: none;
 }
@@ -37,15 +41,15 @@ p {
 .footer__list {
   display: flex;
   justify-content: space-between;
-  align-self: baseline;
-  margin: 0px;
-  padding: 0px 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav__item {
   text-align: center;
-  margin-left: 40px;
-  line-height: 40px;
+  line-height: 22px;
+  padding: 15px 10px;
+  margin-left: 0px;
 }
 
 .nav__item:first-child {
@@ -67,7 +71,7 @@ p {
   letter-spacing: 2px;
   color: #000000;
 }
-/* закончили с хедером*/
+
 
 
 .wrapper {
@@ -76,19 +80,24 @@ p {
 }
 
 
-/*левая панель под фото*/
+/*левая панель c фото*/
 .left-sidebar {
-  min-width: 30%;
+  min-width: 32%;
   background-color: #cf02a33f;
 }
 
 .logo-photo {
   width: 100%;
-  max-width: 500px;
+  max-width: 550px;
 }
 
-.contacts {
-  padding-top: 20px;
+.section__wrapper {
+  padding-left: 10px;
+}
+
+.contacts,
+.summary {
+  margin-top: 20px;
 }
 
 .contacts__list,
@@ -101,9 +110,7 @@ p {
 }
 
 .contacts__item,
-.education__item,
-.skills__item,
-.projects__name {
+.skills__item {
   padding-bottom: 10px;
   font-family: Forum;
   font-size: 25px;
@@ -113,10 +120,10 @@ p {
 }
 
 .link {
-  font-family: Forum;
-  font-size: 25px;
+  font-family: Roboto;
+  font-size: 23px;
   font-style: italic;
-  text-decoration: underline;
+  text-decoration: underline 2px;
   text-decoration-color: #cf02a371;
   color: #000000;
 }
@@ -125,50 +132,69 @@ p {
   padding-top: 40px;
 }
 
-.education {
+.education,
+.skills,
+.example,
+.projects {
   margin-top: 80px;
 }
 
-.education__item {
-  padding-bottom: 50px;
-}
-
 .education__years {
+  font-family: Forum;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #000000;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.education__item {
+  margin-bottom: 75px;
+}
+
+.education__speciality {
+  font-family: Forum;
+  font-size: 33px;
+  line-height: 35px;
+  letter-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  margin-bottom: 30px;
 }
 
 .education__institution {
-  padding: 5px 0px;
-  font-weight: normal;
-}
-
-.education__speciality,
-.education__degree,
-.education__link {
-  margin: 5px 0px;
-  font-size: 21px;
+  font-family: Forum;
+  font-size: 25px;
   line-height: 30px;
-  font-weight: normal;
+  letter-spacing: 2px;
+  color: #000000;
+  margin-bottom: 5px;
 }
 
-.education__degree,
-.education__link {
+.education__degree {
+  font-family: Forum;
   font-style: italic;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #000000;
 }
-/*закончили с левой панелью*/
+
 
 
 /*правая панель*/
 .right-sidebar {
-  max-width: 70%;
+  max-width: 68%;
   flex-direction: column;
   flex-grow: 1;
   padding-left: 10px;
 }
 
 .headline {
-  margin-top: 100px;
+  margin-top: 120px;
   padding-left: 30px;
   line-height: 51px;
   background: linear-gradient(to right, #cf02a3, #2c2166);
@@ -178,7 +204,7 @@ p {
   margin: 0px;
   padding-top: 20px;
   font-family: Forum;
-  font-size: 28px;
+  font-size: 32px;
   line-height: 51px;
   font-weight: bold;
   letter-spacing: 5px;
@@ -190,25 +216,19 @@ p {
   margin: 0px;
   padding-bottom: 20px;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 50px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 2px;
   color: #ffffff;
 }
 
-.summary,
-.skills,
-.example,
-.projects {
-  margin-top: 80px;
-}
-
 .section-caption {
   margin: 0px;
-  padding-left: 20px;
-  font-family: Forum;
-  font-size: 25px;
+  padding: 20px;
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-size: 28px;
   line-height: 50px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -239,18 +259,28 @@ p {
   padding-top: 0px;
 }
 
+.snippet {
+  margin: 15px 30px;
+  background-color: #e0e0e07d;
+  border-radius: 20px;
+}
+
+.task {
+  padding: 15px 30px;
+}
+
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px 0px 15px 30px;
+  justify-content: space-between;
+  padding: 15px 30px;
 }
 
 .card-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
-  margin-bottom: 40px;
+  margin: 10px 20px 40px 0;
   text-decoration: none;
 }
 
@@ -259,12 +289,14 @@ p {
 }
 
 .projects__img {
-  max-width: 390px;
+  max-width: 420px;
   opacity: 1;
+  border-radius: 40px;
 }
 
 .projects__img:hover,
 .footer__img:hover {
+  border-radius: 10px;
   opacity: 0.8;
   filter: drop-shadow(0 0 5px #cf02a3);
   transition: .3s;
@@ -273,7 +305,13 @@ p {
 
 .projects__name {
   text-align: center;
-padding: 5px 0;
+  padding: 5px 0;
+  padding-bottom: 10px;
+  font-family: Forum;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #000000;
 }
 /*закончили с правой колонкой и мейном вообще*/
 
@@ -351,7 +389,7 @@ padding: 5px 0;
   }
 
   .nav__list {
-    position: fixed;
+    position: absolute; /*fixed*/
     right: -300px;
     z-index: 100;
     display: flex;
@@ -365,10 +403,7 @@ padding: 5px 0;
     right: 0;
   }
 
-  .nav__item {
-    margin-left: 0px;
-    padding: 10px 0;
-  }
+  
 
   .footer__item,
   .footer__copyright {
@@ -404,6 +439,10 @@ padding: 5px 0;
     padding-left: 0px;
   }
 
+  .section__wrapper {
+    padding-left: 0;
+  }
+
   .right-sidebar {
     max-width: 100%;
     flex-direction: column;
@@ -421,6 +460,7 @@ padding: 5px 0;
 
   .section-caption {
     background-color: #cf02a3;
+    color: #ffffff;
   }
 
   .snippet {
@@ -443,5 +483,6 @@ padding: 5px 0;
 
   .projects__img {
     max-width: 100%;
+    border-radius: 0;
   }
 }
