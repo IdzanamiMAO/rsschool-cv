@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,35 +27,29 @@ p {
 
 /*хедр*/
 .header {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px;
-  padding: 0px;
+  position: absolute;
+  right: 0;
+  display: block;
+  justify-content: flex-end;
 }
 
-.logo-photo {
-  max-width: 500px;
-  margin-right: 30px;
-}
-
-.container {
-  flex-direction: column;
-  flex-grow: 1;
+.humburger-menu {
+  display: none;
 }
 
 .nav__list,
 .footer__list {
   display: flex;
   justify-content: space-between;
-  align-self: baseline;
-  margin: 0px;
-  padding: 0px 30px;
-
+  margin: 0;
+  padding: 0;
 }
 
 .nav__item {
-  margin-left: 40px;
-  line-height: 40px;
+  text-align: center;
+  line-height: 22px;
+  padding: 15px 10px;
+  margin-left: 0px;
 }
 
 .nav__item:first-child {
@@ -62,17 +57,11 @@ p {
 }
 
 .nav__item:hover,
-.contacts__link:hover,
-.education__link:hover,
-.projects__link:hover,
-.footer__item:hover {
+.link:hover {
+  background-color: #cf02a33f;
   filter: drop-shadow(0 0 5px #cf02a3);
   transition: .3s;
   cursor: pointer;
-}
-
-.nav__item:hover {
-  background-color: #cf02a33f;
 }
 
 .nav__link {
@@ -83,15 +72,129 @@ p {
   color: #000000;
 }
 
-.nav__link:visited,
-.contacts__link:visited,
-.education__link:visited,
-.projects__link:visited {
-  color: #cf02a3;
+
+
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+/*левая панель c фото*/
+.left-sidebar {
+  min-width: 32%;
+  background-color: #cf02a33f;
+}
+
+.logo-photo {
+  width: 100%;
+  max-width: 550px;
+}
+
+.section__wrapper {
+  padding-left: 10px;
+}
+
+.contacts,
+.summary {
+  margin-top: 20px;
+}
+
+.contacts__list,
+.education__list,
+.skills__list,
+.footer__item {
+  margin: 0px;
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+
+.contacts__item,
+.skills__item {
+  padding-bottom: 10px;
+  font-family: Forum;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.link {
+  font-family: Roboto;
+  font-size: 23px;
+  font-style: italic;
+  text-decoration: underline 2px;
+  text-decoration-color: #cf02a371;
+  color: #000000;
+}
+
+.address {
+  padding-top: 40px;
+}
+
+.education,
+.skills,
+.example,
+.projects {
+  margin-top: 80px;
+}
+
+.education__years {
+  font-family: Forum;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.education__item {
+  margin-bottom: 75px;
+}
+
+.education__speciality {
+  font-family: Forum;
+  font-size: 33px;
+  line-height: 35px;
+  letter-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.education__institution {
+  font-family: Forum;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.education__degree {
+  font-family: Forum;
+  font-style: italic;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+
+
+/*правая панель*/
+.right-sidebar {
+  max-width: 68%;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 10px;
 }
 
 .headline {
-  margin-top: 190px;
+  margin-top: 120px;
   padding-left: 30px;
   line-height: 51px;
   background: linear-gradient(to right, #cf02a3, #2c2166);
@@ -101,7 +204,7 @@ p {
   margin: 0px;
   padding-top: 20px;
   font-family: Forum;
-  font-size: 28px;
+  font-size: 32px;
   line-height: 51px;
   font-weight: bold;
   letter-spacing: 5px;
@@ -113,22 +216,19 @@ p {
   margin: 0px;
   padding-bottom: 20px;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 50px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 2px;
   color: #ffffff;
 }
 
-.summary {
-  margin-top: 140px;
-}
-
 .section-caption {
   margin: 0px;
-  padding-left: 20px;
-  font-family: Forum;
-  font-size: 25px;
+  padding: 20px;
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-size: 28px;
   line-height: 50px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -149,138 +249,71 @@ p {
   font-size: 25px;
   line-height: 35px;
   letter-spacing: 2px;
-} /* закончили с хедером*/
-
-
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px;
 }
 
-
-/*левая панель под фото*/
-.left-sidebar {
-  margin-right: 30px;
-  padding-left: 30px;
-  margin-top: 20px;
-  min-width: 470px;
-  background-color: #cf02a33f;
+.text {
+  padding-top: 15px;
 }
 
-.contacts__list,
-.education__list,
-.skills__list,
-.footer__item {
-  margin: 0px;
+.text:first-of-type{
+  padding-top: 0px;
+}
+
+.snippet {
+  margin: 15px 30px;
+  background-color: #e0e0e07d;
+  border-radius: 20px;
+}
+
+.task {
   padding: 15px 30px;
-  box-sizing: border-box;
-}
-
-.contacts__item,
-.education__item,
-.skills__item {
-  padding-bottom: 10px;
-  font-family: Forum;
-  font-size: 25px;
-  line-height: 30px;
-  letter-spacing: 2px;
-}
-
-.contacts__link,
-.education__link,
-.projects__link {
-  font-style: italic;
-  text-decoration: underline;
-  text-decoration-color: #cf02a371;
-  color: #000000;
-}
-
-.address {
-  padding-top: 40px;
-}
-
-.education {
-  margin-top: 100px;
-}
-
-.education__item {
-  padding-bottom: 50px;
-  font-weight: bold;
-}
-
-.education__institution {
-  padding: 5px 0px;
-  font-weight: normal;
-}
-
-.education__speciality,
-.education__degree,
-.education__link {
-  margin: 5px 0px;
-  font-size: 22px;
-  line-height: 30px;
-  font-weight: normal;
-}
-
-.education__degree,
-.education__link {
-  font-style: italic;
-} /*закончили с левой панелью*/
-
-
-/*правая панель*/
-.right-sidebar {
-  flex-direction: column;
-  flex-grow: 1;
-  padding-top: 20px;
-}
-
-.rus {
-  font-style: italic;
-  font-size: 22px;
-}
-
-.example {
-  margin-top: 90px;
-}
-
-.projects {
-  margin-top: 80px;
 }
 
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px 0px 0px 30px;
+  justify-content: space-between;
+  padding: 15px 30px;
 }
 
-.projects__link {
-  margin-right: 20px;
-  margin-bottom: 20px;
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20px 40px 0;
   text-decoration: none;
-  opacity: 0.7;
 }
 
-.projects__link:nth-of-type(even) {
+.card-inner:nth-of-type(even) {
   margin-right: 0px;
 }
 
-.projects__link:last-child {
-  margin-bottom: 0px;
-}
-
-.projects__link:hover {
-  opacity: 1;
-}
-
 .projects__img {
-  max-width: 430px;
+  max-width: 420px;
+  opacity: 1;
+  border-radius: 40px;
+}
+
+.projects__img:hover,
+.footer__img:hover {
+  border-radius: 10px;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 5px #cf02a3);
+  transition: .3s;
+  cursor: pointer;
 }
 
 .projects__name {
   text-align: center;
-}/*закончили с правой колонкой и мейном вообщк*/
+  padding: 5px 0;
+  padding-bottom: 10px;
+  font-family: Forum;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+/*закончили с правой колонкой и мейном вообще*/
 
 
 /*футер*/
@@ -309,23 +342,69 @@ p {
   font-size: 15px;
   line-height: 17px;
   text-align: center;
-}/*закончили с футером*/
+}
+
+.footer__copyright:hover{
+  cursor: default;
+}
+/*закончили с футером*/
 
 
 @media screen and (max-width: 768px) { /*для телефонов*/
-  .header,
-  .wrapper {
+  .header {
+    margin: 0;
+    position: relative;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    align-items: flex-end;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 25px 25px;
+    position: absolute;
+    right: 0px;
+    z-index: 900;
+    width: 35px;
+    height: 30px;
+  }
+
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all .8s;
+  }
+
+  .change .line-1 {
+    transform: rotateZ(-45deg) translate(-8px, 6px);
+  }
+
+  .change .line-3 {
+    transform: rotateZ(45deg) translate(-8px, -6px);
+  }
+
+  .change .line-2 {
+    opacity: 0;;
   }
 
   .nav__list {
-    position: absolute;
-    top: 0px;
-    justify-content: center;
-    padding: 0px 5px;
+    position: absolute; /*fixed*/
+    right: -300px;
+    z-index: 100;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 60px 25px;
+    transition: right 1s;
   }
-  .nav__item,
+
+  .change .nav__list {
+    right: 0;
+  }
+
+  
+
   .footer__item,
   .footer__copyright {
     margin-left: 0px;
@@ -339,9 +418,14 @@ p {
   .nav__link {
     margin-left: 0px;
     font-family: Roboto;
-    font-size: 10px;
-    line-height: 15px;
-    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
   }
 
   .logo-photo {
@@ -352,6 +436,16 @@ p {
   .left-sidebar {
     min-width: auto;
     margin-right: 0px;
+    padding-left: 0px;
+  }
+
+  .section__wrapper {
+    padding-left: 0;
+  }
+
+  .right-sidebar {
+    max-width: 100%;
+    flex-direction: column;
     padding-left: 0px;
   }
 
@@ -366,6 +460,7 @@ p {
 
   .section-caption {
     background-color: #cf02a3;
+    color: #ffffff;
   }
 
   .snippet {
@@ -378,21 +473,16 @@ p {
     padding: 15px 0px;
   }
 
-  .projects__link {
-    margin-right: 0px;
-    margin-bottom: 20px;
-  }
-
-  .projects__link:nth-of-type(even) {
+  .card-inner {
     margin-right: 0px;
   }
 
-  .projects__link:last-child {
-    margin-bottom: 0px;
+  .card-inner:last-of-type {
+    margin-bottom: 60px;
   }
 
   .projects__img {
     max-width: 100%;
+    border-radius: 0;
   }
- 
 }
