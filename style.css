@@ -56,14 +56,6 @@ p {
   margin-left: 0px;
 }
 
-.nav__item:hover,
-.link:hover {
-  background-color: #cf02a33f;
-  filter: drop-shadow(0 0 5px #cf02a3);
-  transition: .3s;
-  cursor: pointer;
-}
-
 .nav__link {
   font-family: Roboto;
   font-size: 22px;
@@ -71,8 +63,6 @@ p {
   letter-spacing: 2px;
   color: #000000;
 }
-
-
 
 .wrapper {
   display: flex;
@@ -103,14 +93,15 @@ p {
 .contacts__list,
 .education__list,
 .skills__list,
-.footer__item {
+.language__list {
   margin: 0px;
   padding: 15px 30px;
   box-sizing: border-box;
 }
 
 .contacts__item,
-.skills__item {
+.skills__item,
+.language__item {
   padding-bottom: 10px;
   font-family: Forum;
   font-size: 25px;
@@ -123,9 +114,7 @@ p {
   font-family: Roboto;
   font-size: 23px;
   font-style: italic;
-  text-decoration: underline 2px;
-  text-decoration-color: #cf02a371;
-  color: #000000;
+  color: #cf02a3;
 }
 
 .address {
@@ -134,6 +123,7 @@ p {
 
 .education,
 .skills,
+.language,
 .example,
 .projects {
   margin-top: 80px;
@@ -182,7 +172,6 @@ p {
   letter-spacing: 2px;
   color: #000000;
 }
-
 
 
 /*правая панель*/
@@ -235,12 +224,6 @@ p {
   border-left: 10px solid #cf02a3;
 }
 
-.section-caption:hover {
-  background-color: #cf02a3;
-  transition: .3s;
-  cursor: pointer;
-}
-
 .section-desc,
 .snippet {
   margin: 0px;
@@ -266,7 +249,7 @@ p {
 }
 
 .task {
-  padding: 15px 30px;
+  margin: 15px 30px;
 }
 
 .card-wrapper {
@@ -292,15 +275,6 @@ p {
   max-width: 420px;
   opacity: 1;
   border-radius: 40px;
-}
-
-.projects__img:hover,
-.footer__img:hover {
-  border-radius: 10px;
-  opacity: 0.8;
-  filter: drop-shadow(0 0 5px #cf02a3);
-  transition: .3s;
-  cursor: pointer;
 }
 
 .projects__name {
@@ -333,21 +307,56 @@ p {
   margin-left: 40px;
 }
 
-.footer__img {
-  width: 35px;
-}
-
 .footer__copyright {
   margin-left: 40px;
   font-size: 15px;
   line-height: 17px;
   text-align: center;
 }
-
-.footer__copyright:hover{
-  cursor: default;
-}
 /*закончили с футером*/
+
+
+
+@media (hover: hover) and (pointer: fine) { /*ховер эффекты*/
+  .nav__item:hover,
+  .link:hover {
+    transition: 0.3s;
+    background-color: #cf02a33f;
+    filter: drop-shadow(0 0 5px #cf02a3);
+    cursor: pointer;
+  }
+
+  .section-caption:hover {
+    transition: 0.3s;
+    background-color: #cf02a3;
+    cursor: pointer;
+  }
+
+  .projects__img:hover {
+    transition: 0.3s;
+    border-radius: 10px;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 5px #cf02a3);
+    cursor: pointer;
+  }
+
+  .footer__item:hover .svg {
+    transition: 0.3s;
+    fill: #cf02a3;
+    cursor: pointer;
+  }
+
+  .footer__item:hover .st7 {
+    transition: 0.3s;
+    fill: #fff;
+    stroke: #cf02a3;
+    cursor: pointer;
+  }
+
+  .footer__copyright:hover{
+    cursor: default;
+  }
+}
 
 
 @media screen and (max-width: 768px) { /*для телефонов*/
@@ -363,9 +372,9 @@ p {
     justify-content: space-around;
     padding: 25px 25px;
     position: absolute;
-    right: 0px;
+    right: 0;
     z-index: 900;
-    width: 35px;
+    width: 50px;
     height: 30px;
   }
 
@@ -389,8 +398,8 @@ p {
   }
 
   .nav__list {
-    position: absolute; /*fixed*/
-    right: -300px;
+    position: absolute;
+    left: 0; right: -300px; top: 0; bottom: 0;
     z-index: 100;
     display: flex;
     align-items: flex-end;
@@ -400,10 +409,10 @@ p {
   }
 
   .change .nav__list {
-    right: 0;
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    transition: right 1s;
   }
-
-  
 
   .footer__item,
   .footer__copyright {
@@ -435,27 +444,51 @@ p {
 
   .left-sidebar {
     min-width: auto;
+    display: flex;
+    flex-direction: column;
     margin-right: 0px;
     padding-left: 0px;
+    order: 0;
+    background: none;
   }
 
-  .section__wrapper {
+   .section__wrapper {
     padding-left: 0;
   }
 
   .right-sidebar {
     max-width: 100%;
+    display: flex;
     flex-direction: column;
     padding-left: 0px;
+    order: 1;
+  }
+
+  .two {
+    order: -1;
   }
 
   .headline,
   .summary,
   .education,
   .skills,
+  .language,
   .example,
   .projects {
     margin-top: 30px;
+  }
+
+  .contacts {
+    margin-top: 30px;
+    order: 1;
+  }
+
+  .education__item {
+    margin-bottom: 25px;
+  }
+
+  .education__item:last-of-type {
+    margin-bottom: 0;
   }
 
   .section-caption {
@@ -470,7 +503,7 @@ p {
   .card-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 15px 0px;
+    padding: 15px 0 0px;
   }
 
   .card-inner {
@@ -478,7 +511,7 @@ p {
   }
 
   .card-inner:last-of-type {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
   }
 
   .projects__img {
