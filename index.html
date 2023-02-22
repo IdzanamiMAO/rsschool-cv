@@ -1,143 +1,230 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./assets/ico/favicon.ico">
   </head>
   <body>
-    <header class="header">
-      <img  class="logo-photo" src="./assets/img/logo-photo.JPG" alt="logo-photo">
-      <div class="container">
-        <nav>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#skills">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#education">Education</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#example">Code examples</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#projects">Projects</a>
-            </li>
-            <li class="nav__item">
-              <a  class="nav__link" href="#contacts">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="headline">
-          <h1 class="title">Tatiana Kazakova</h1>
-          <p class="subtitle">Junior Front-End developer</p>
+    <header class="header" id="header">
+      <nav class="navbar">
+        <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
         </div>
-        <section class="summary">
-          <h2 class="section-caption">About me</h2>
-          <p class="section-desc"> I'm confused every time when I need to tell about myself. I'm cool ^_^</p>
-        </section>
-      </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#skills">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#example">Code</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#projects">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#education">Education</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main class="wrapper">
-      <div class="left-sidebar">
-        <section id="contacts">
-          <h2 class="section-caption">Contacts</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item"> discord:
-              <a class="contacts__link" href="https://discord.com/channels/@me"> @MAO #3760</a>
-            </li>
-            <li class="contacts__item"> github: 
-              <a class="contacts__link" href="https://github.com/IdzanamiMAO">IdzanamiMAO</a>
-            </li>
-            <li class="contacts__item address">Address:
-              <p>Rostov-on-Don, Russia</p>
-            </li>
-          </ul>
-        </section>
-        <section class="education" id="education">
-          <h2 class="section-caption">Education</h2>
-          <ul class="education__list">
-            <li class="education__item"> 2012-2018
-              <p class="education__institution">Rostov State University of Civil Engineering, Rostov-on-Don</p>
-              <p class="education__speciality">Land management and cadastres</p>
-              <p class="education__degree">Master's degree</p>
-            </li>
-            <li class="education__item"> 2020
-              <p class="education__institution">stepik</p>
-              <p class="education__speciality">Веб-разработка для начинающих: HTML и CSS</p>
-              <a class="education__link" href="https://stepik.org/cert/796509">Certificate</a> 
-            </li>
-          </ul>
-        </section>
+    <main>
+      <div class="up">
+        <a href="#header">
+          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 38C19.6685 38 19.3505 37.8683 19.1161 37.6339C18.8817 37.3995 18.75 37.0815 18.75 36.75V7.2675L10.885 15.135C10.6503 15.3697 10.3319 15.5016 10 15.5016C9.66806 15.5016 9.34972 15.3697 9.115 15.135C8.88028 14.9003 8.74842 14.5819 8.74842 14.25C8.74842 13.9181 8.88028 13.5997 9.115 13.365L19.115 3.365C19.2311 3.24859 19.3691 3.15623 19.5209 3.09322C19.6728 3.0302 19.8356 2.99776 20 2.99776C20.1644 2.99776 20.3272 3.0302 20.4791 3.09322C20.6309 3.15623 20.7689 3.24859 20.885 3.365L30.885 13.365C31.1197 13.5997 31.2516 13.9181 31.2516 14.25C31.2516 14.5819 31.1197 14.9003 30.885 15.135C30.6503 15.3697 30.3319 15.5016 30 15.5016C29.6681 15.5016 29.3497 15.3697 29.115 15.135L21.25 7.2675V36.75C21.25 37.0815 21.1183 37.3995 20.8839 37.6339C20.6495 37.8683 20.3315 38 20 38Z" fill="white"/>
+            </svg>
+        </a>
       </div>
-      <div class="right-sidebar">
-        <section id="skills">
-          <h2 class="section-caption">Skills</h2>
-          <ul class="skills__list">
-            <li class="skills__item">HTML/HTML5</li>
-            <li class="skills__item">CSS3</li>
-            <li class="skills__item">BEM</li>
-            <li class="skills__item">Figma</li>
-            <li class="skills__item">English - A2. My english is bad. <span class="rus">Из бед и огорчений T_T</span></li>
-          </ul>
-        </section>
-        <section class="example" id="example">
-          <h2 class="section-caption">Code example</h2>
-          <pre class="snippet"><code>
-function multiply(a, b){
- let x;
-  x =  a * b;
-  return x;
-}
-          </code></pre>
-        </section>
-        <section class="projects" id="projects">
-          <h2 class="section-caption">Projects</h2>
-          <div class="card-wrapper">
-            <a class="projects__link" href="https://idzanamimao.github.io/Pied-Piper/">
-              <img class="projects__img" src="./assets/img/PiedPiper.jpg" alt="PiedPiper">
-              <p class="projects__name">Pied Piper</p>
-            </a>
-            <a class="projects__link" href="https://idzanamimao.github.io/webdev/">
-              <img class="projects__img" src="./assets/img/WebDew.jpg" alt="webdev">
-              <p class="projects__name">Webdev</p>
-            </a>
-            <a class="projects__link" href="https://idzanamimao.github.io/Cozy_House/">
-              <img class="projects__img" src="./assets/img/CozyHouse.jpg" alt="CozyHouse">
-              <p class="projects__name">Cozy House</p>
-            </a>
-            <a class="projects__link" href="https://rolling-scopes-school.github.io/idzanamimao-JSFEPRESCHOOL/museum">
-              <img class="projects__img" src="./assets/img/Museum.jpg" alt="museum">
-              <p class="projects__name">Museum</p>
-            </a>
+      <div class="wrapper">
+        <div class="left-sidebar">
+          <div class="photo">
+            <img class="logo-photo" src="./assets/img/logo-photo.JPG" alt="logo-photo">
           </div>
-        </section>
+        </div>
+        <div class="right-sidebar">
+          <div class="headline">
+            <h1 class="title">Tatiana Kazakova</h1>
+            <p class="subtitle">Junior Front-End developer</p>
+          </div>
+          <section class="summary">
+            <h2 class="section-caption">About me</h2>
+            <div class="section-desc">
+              <p class="text">Hi, I'm just starting to learn the profession of Junior Front-End developer.</p>
+              <p class="text">I don't have commercial development experience yet, but I have several training <a class="link" href="#projects">projects</a>. I have good interpersonal skills, I'm an excellent team worker. I'm willing to learn and develop new skills and knowledge but I also want to apply them to the real products.</p>
+              <p class="text">I'm looking forward to working in cool teams.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="left-sidebar">
+          <section class="contacts section__wrapper" id="contacts">
+            <h2 class="section-caption">Contacts</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">discord:
+                <a class="contacts__link link" href="https://discord.com/channels/@me">@MAO#3760</a>
+              </li>
+              <li class="contacts__item">github:
+                <a class="contacts__link link" href="https://github.com/IdzanamiMAO">IdzanamiMAO</a>
+              </li>
+              <li class="contacts__item address">Address:
+                <p>Saint Petersburg, Russia</p>
+              </li>
+            </ul>
+          </section>
+          <section class="education section__wrapper" id="education">
+            <h2 class="section-caption">Education</h2>
+            <div class="education__list">
+              <p class="education__years">2012-2018</p>
+              <div class="education__item">
+                <p class="education__speciality">Land management and cadastres</p>
+                <p class="education__institution">Rostov State University of Civil Engineering,<br>Rostov-on-Don</p>
+                <p class="education__degree">Master's degree</p>
+              </div>
+              <p class="education__years">2020</p>
+              <div class="education__item">
+                <p class="education__speciality">Веб-разработка для начинающих: HTML и CSS</p>
+                <p class="education__institution">Stepik</p>
+                <a class="link" href="https://stepik.org/cert/796509">Certificate</a>
+              </div>
+              <p class="education__years">2022</p>
+              <div class="education__item">
+                <p class="education__speciality">«JavaScript /
+                  Front-end. Stage 0»</p>
+                <p class="education__institution">The Rolling Scopes</p>
+                <a class="link" href="https://rs.school/js-stage0/">link</a>
+              </div>
+              <div class="education__item">
+                <p class="education__speciality">JavaScript для начинающих</p>
+                <p class="education__institution">Stepik</p>
+                <a class="link" href="https://stepik.org/cert/1624681">Certificate</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="right-sidebar two">
+          <section class="skills" id="skills">
+            <h2 class="section-caption">Skills</h2>
+            <ul class="skills__list">
+              <li class="skills__item">HTML/HTML5</li>
+              <li class="skills__item">CSS3</li>
+              <li class="skills__item">JS</li>
+              <li class="skills__item">BEM</li>
+              <li class="skills__item">Figma</li>
+            </ul>
+          </section>
+          <section class="language" id="language">
+            <h2 class="section-caption">language</h2>
+            <ul class="language__list">
+              <li class="language__item">Russian: native</li>
+              <li class="language__item">English: A2</li>
+            </ul>
+          </section>
+          <section class="example" id="example">
+            <h2 class="section-caption">Code example</h2>
+            <pre class="snippet"><code>function divCon(x){
+
+    let str;
+    let num;
+
+    str = x.reduce((acc, i) =&gt; {
+      if (typeof i === typeof &quot;0&quot;) {
+        return acc + Number(i);
+      } return acc;
+    }, 0);
+
+    num = x.reduce((acc, i) =&gt; {
+      if (typeof i === typeof 0) {
+        return acc + i;
+      } return acc;
+    }, 0);
+
+    return num - str;
+  }</code></pre>
+            <a class="task link" href="https://www.codewars.com/kata/57eaec5608fed543d6000021">task</a>
+            <p class="section-desc">More solved tasks on
+              <a class="link" href="https://www.codewars.com/users/IdzanamiMAO/completed">codewars</a>.
+            </p>
+          </section>
+          <section class="projects" id="projects">
+            <h2 class="section-caption">Projects</h2>
+            <div class="card-wrapper">
+              <div class="card-inner">
+                <a href="https://idzanamimao.github.io/Cozy_House/">
+                  <img class="projects__img" src="./assets/img/CozyHouse.jpg" alt="CozyHouse">
+                </a>
+                <p class="projects__name">Cozy House</p>
+                <a class="link" href="https://github.com/IdzanamiMAO/Cozy_House">repository</a>
+              </div>
+              <div class="card-inner">
+                <a href="https://idzanamimao.github.io/museum/museum/">
+                  <img class="projects__img" src="./assets/img/Museum.jpg" alt="museum">
+                </a>
+                <p class="projects__name">Museum</p>
+                <a class="link" href="https://github.com/IdzanamiMAO/museum">repository</a>
+              </div>
+              <div class="card-inner">
+                <a href="https://idzanamimao.github.io/travel/">
+                  <img class="projects__img" src="./assets/img/Travel.jpg" alt="travel">
+                </a>
+                <p class="projects__name">Travel</p>
+                <a class="link" href="https://github.com/IdzanamiMAO/travel">repository</a>
+              </div>
+              <div class="card-inner">
+                <a href="https://rolling-scopes-school.github.io/idzanamimao-JSFEPRESCHOOL2022Q4/plants/">
+                  <img class="projects__img" src="./assets/img/Plants.jpg" alt="Plants">
+                </a>
+                <p class="projects__name">Plants</p>
+                <a class="link" href="https://github.com/IdzanamiMAO/plants">repository</a>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
     <footer class="inner">
       <ul class="footer__list">
         <li class="footer__item">
           <a href="https://discord.com/channels/@me">
-            <img class="footer__img" src="./assets/svg/discord_dark.svg" alt="discord">
-          </a>
+            <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100">
+              <path class="svg" d="M85.778,24.561c-11.641-8.71-22.793-8.466-22.793-8.466s-1.14,1.302-1.14,1.302c13.839,4.152,20.27,10.257,20.27,10.257
+              c-19.799-10.901-45.019-10.823-65.613,0c0,0,6.675-6.431,21.328-10.583c0,0-0.814-0.977-0.814-0.977s-11.071-0.244-22.793,8.466
+              c0,0-11.722,21.084-11.722,47.052c0,0,6.838,11.722,24.829,12.292c0,0,3.012-3.582,5.454-6.675
+              c-10.339-3.093-14.246-9.524-14.246-9.524c6.495,4.064,13.063,6.608,21.247,8.222c13.316,2.741,29.879-0.077,42.249-8.222
+              c0,0-4.07,6.594-14.734,9.606c2.442,3.012,5.373,6.512,5.373,6.512C90.662,83.254,97.5,71.532,97.5,71.613
+              C97.5,45.645,85.778,24.561,85.778,24.561z M34.818,64.043c-4.559,0-8.303-3.989-8.303-8.955c0.333-11.892,16.357-11.855,16.607,0
+              C43.121,60.054,39.458,64.043,34.818,64.043z M64.531,64.043c-4.559,0-8.303-3.989-8.303-8.955c0.366-11.869,16.19-11.874,16.607,0
+              C72.834,60.054,69.171,64.043,64.531,64.043z" fill="#000000"/></svg>
+            </a>
         </li>
         <li class="footer__item">
           <a href="https://github.com/IdzanamiMAO">
-            <img class="footer__img" src="./assets/svg/github.svg" alt="github">
+            <svg width="45" height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+              <path class="svg" fill-rule="evenodd" d="M20,8a12,12,0,0,0-3.79,23.39c.6.11.82-.26.82-.58s0-1,0-2c-3.34.72-4-1.61-4-1.61a3.21,3.21,0,0,0-1.33-1.76c-1.09-.74.08-.73.08-.73a2.55,2.55,0,0,1,1.84,1.24,2.56,2.56,0,0,0,3.49,1,2.59,2.59,0,0,1,.76-1.61c-2.66-.3-5.47-1.33-5.47-5.93a4.63,4.63,0,0,1,1.24-3.22A4.28,4.28,0,0,1,13.7,13s1-.33,3.3,1.23a11.18,11.18,0,0,1,6,0C25.3,12.65,26.3,13,26.3,13a4.28,4.28,0,0,1,.12,3.17,4.63,4.63,0,0,1,1.23,3.22c0,4.61-2.8,5.63-5.47,5.92A2.88,2.88,0,0,1,23,27.52c0,1.6,0,2.89,0,3.29s.21.69.82.58A12,12,0,0,0,20,8Z" fill="#000000"/></svg>
           </a>
         </li>
-        <li class="footer__copyright">
-            <p>© by MAO</p>
-            <p>2022</p>
+        <li class="footer__item footer__copyright">
+          <p>&copy; by MAO</p>
+          <p>2022</p>
         </li>
         <li class="footer__item">
           <a href="https://rs.school/js/">
-            <img class="footer__img" src="./assets/svg/rs_school_js.svg" alt="rs_school_js">
+            <svg width="55" height="55" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 552.8 205.3"><style>.st0{fill:#fff}.st1{clip-path:url(#SVGID_2_)}.st2{clip-path:url(#SVGID_4_)}.st3{clip-path:url(#SVGID_6_)}.st4{clip-path:url(#SVGID_8_)}.st5{fill:#fff;stroke:#000;stroke-width:4;stroke-miterlimit:10}.st6{clip-path:url(#SVGID_8_)}.st6,.st7{fill:none;stroke:#000;stroke-width:4;stroke-miterlimit:10}.st8,.st9{clip-path:url(#SVGID_10_)}.st9{fill:none;stroke:#000;stroke-width:4;stroke-miterlimit:10}</style><title>rs_school_js</title>
+              <path class="svg" d="M285.4 68l26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.9 3.6 6.9 5.4 12.2 5.4 3.9 0 7-.9 9.1-2.8 2-1.5 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.1-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4 6 4.2 9.6 11 10.7 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8s-5.3-2.8-9.2-2.8c-3.2 0-5.6.7-7.2 2-1.5 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.5 13.3 0 5.6-1.6 11.2-4.8 15.9-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8S286.1 77 285.4 68zM6.3 97.6V8.2h46.1c8.5 0 15.1.7 19.6 2.2 4.4 1.4 8.3 4.3 10.9 8.2 2.9 4.3 4.3 9.3 4.2 14.5.3 8.8-4.2 17.2-11.9 21.6-3 1.7-6.3 2.9-9.7 3.5 2.5.7 5 1.9 7.2 3.3 1.7 1.4 3.1 3 4.4 4.7 1.5 1.7 2.8 3.6 3.9 5.6l13.4 25.9H63L48.2 70.2c-1.9-3.5-3.5-5.8-5-6.9-2-1.4-4.4-2.1-6.8-2.1H34v36.3H6.3zM34 44.4h11.7c2.5-.2 4.9-.6 7.3-1.2 1.8-.3 3.4-1.3 4.5-2.8 2.7-3.6 2.3-8.7-1-11.8-1.8-1.5-5.3-2.3-10.3-2.3H34v18.1zM0 174.2l26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.8 3.6 6.9 5.5 12.2 5.5 3.9 0 7-.9 9.1-2.8 2-1.6 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.2-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4s9.5 11 10.6 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8-2.2-1.9-5.3-2.8-9.2-2.7-3.2 0-5.6.7-7.2 2.1-1.6 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.6 13.2 0 5.6-1.7 11.1-4.8 15.8-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8-5.9-6-9.2-13.4-10-22.4z"/>
+              <path class="svg" d="M133 167.2l24.2 7.3c-1.3 6.1-4 11.9-7.7 17-3.4 4.5-7.9 8-13 10.3-5.2 2.3-11.8 3.5-19.8 3.5-9.7 0-17.7-1.4-23.8-4.2-6.2-2.8-11.5-7.8-16-14.9-4.5-7.1-6.7-16.2-6.7-27.3 0-14.8 3.9-26.2 11.8-34.1s19-11.9 33.4-11.9c11.3 0 20.1 2.3 26.6 6.8 6.4 4.6 11.2 11.6 14.4 21l-24.4 5.4c-.6-2.1-1.5-4.2-2.7-6-1.5-2.1-3.4-3.7-5.7-4.9-2.3-1.2-4.9-1.7-7.5-1.7-6.3 0-11.1 2.5-14.4 7.6-2.5 3.7-3.8 9.6-3.8 17.6 0 9.9 1.5 16.7 4.5 20.4 3 3.7 7.2 5.5 12.7 5.5 5.3 0 9.3-1.5 12-4.4 2.7-3.1 4.7-7.4 5.9-13zm56.5-52.8h27.6v31.3h30.2v-31.3h27.8v89.4h-27.8v-36.2h-30.2v36.2h-27.6v-89.4z"/>
+              <path class="svg" d="M271.3 159.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.3 4 34.4 12S364 144 364 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8s4.9-10.8 4.9-20.8c0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5zm93.4-.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.4 4 34.4 12S485 144 485 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8 3.3-3.9 4.9-10.8 4.9-20.8 0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10.1 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5z"/><path class="svg" d="M482.1 114.4h27.6v67.4h43.1v22H482v-89.4z"/><ellipse transform="rotate(-37.001 420.46 67.88)" class="st0" cx="420.5" cy="67.9" rx="63" ry="51.8"/><defs><ellipse id="SVGID_1_" transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63" ry="51.8"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" overflow="visible"/></clipPath><g class="st1"><path transform="rotate(-37.001 420.82 68.353)" class="st0" d="M330.9-14.2h179.8v165.1H330.9z"/><g id="Layer_2_1_"><defs><path id="SVGID_3_" transform="rotate(-37.001 420.82 68.353)" d="M330.9-14.2h179.8v165.1H330.9z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" overflow="visible"/></clipPath><g id="Layer_1-2" class="st2"><ellipse transform="rotate(-37.001 420.46 67.88)" class="st0" cx="420.5" cy="67.9" rx="63" ry="51.8"/><defs><ellipse id="SVGID_5_" transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63" ry="51.8"/></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" overflow="visible"/></clipPath><g class="st3"><path transform="rotate(-37 420.799 68.802)" class="st0" d="M357.8 17h125.9v103.7H357.8z"/><defs><path id="SVGID_7_" transform="rotate(-37 420.799 68.802)" d="M357.8 17h125.9v103.7H357.8z"/></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" overflow="visible"/></clipPath><g class="st4"><ellipse transform="rotate(-37.001 420.46 67.88)" class="st5" cx="420.5" cy="67.9" rx="63" ry="51.8"/></g><path transform="rotate(-37 420.799 68.802)" class="st6" d="M357.8 17h125.9v103.7H357.8z"/><ellipse transform="rotate(-37.001 420.46 67.88)" class="st7" cx="420.5" cy="67.9" rx="63" ry="51.8"/><path transform="rotate(-37 420.799 68.802)" class="st0" d="M357.8 17h125.9v103.7H357.8z"/><defs><path id="SVGID_9_" transform="rotate(-37 420.799 68.802)" d="M357.8 17h125.9v103.7H357.8z"/></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" overflow="visible"/></clipPath><g class="st8"><ellipse transform="rotate(-37.001 420.46 67.88)" class="st5" cx="420.5" cy="67.9" rx="63" ry="51.8"/></g><path transform="rotate(-37 420.799 68.802)" class="st9" d="M357.8 17h125.9v103.7H357.8z"/><path transform="rotate(-37.001 420.82 68.353)" class="st7" d="M330.9-14.2h179.8v165.1H330.9z"/></g><ellipse transform="rotate(-37.001 420.46 67.88)" class="st7" cx="420.5" cy="67.9" rx="63" ry="51.8"/>
+              <path class="svg" d="M392.4 61.3l10-7 12.3 17.5c2.1 2.8 3.7 5.8 4.9 9.1.7 2.5.5 5.2-.5 7.6-1.3 3-3.4 5.5-6.2 7.3-3.3 2.3-6.1 3.6-8.5 4-2.3.4-4.7 0-6.9-1-2.4-1.2-4.5-2.9-6.1-5.1l8.6-8c.7 1.1 1.6 2.1 2.6 2.9.7.5 1.5.8 2.4.8.7 0 1.4-.3 1.9-.7 1-.6 1.7-1.8 1.6-3-.3-1.7-1-3.4-2.1-4.7l-14-19.7zm30 11.1l9.1-7.2c1 1.2 2.3 2.1 3.7 2.6 2 .6 4.1.2 5.8-1.1 1.2-.8 2.2-1.9 2.6-3.3.6-1.8-.4-3.8-2.2-4.4-.3-.1-.6-.2-.9-.2-1.2-.1-3.3.4-6.4 1.7-5.1 2.1-9.1 2.9-12.1 2.6-2.9-.3-5.6-1.8-7.2-4.3-1.2-1.7-1.8-3.7-1.9-5.7 0-2.3.6-4.6 1.9-6.5 1.9-2.7 4.2-5 7-6.8 4.2-2.9 7.9-4.3 11.1-4.3 3.2 0 6.2 1.5 9 4.6l-9 7.1c-1.8-2.3-5.2-2.8-7.5-1l-.3.3c-1 .6-1.7 1.5-2.1 2.6-.3.8-.1 1.7.4 2.4.4.5 1 .9 1.7.9.8.1 2.2-.3 4.2-1.2 5-2.1 8.8-3.3 11.4-3.7 2.2-.4 4.5-.2 6.6.7 1.9.8 3.5 2.2 4.6 3.9 1.4 2 2.2 4.4 2.3 6.9.1 2.6-.6 5.1-2 7.3-1.8 2.7-4.1 5-6.8 6.8-5.5 3.8-10 5.4-13.6 4.8-3.9-.6-7.1-2.6-9.4-5.5z"/></g></g></g></svg>
           </a>
         </li>
       </ul>
     </footer>
+    <script src="js.js"></script>
   </body>
 </html>
